@@ -12,7 +12,7 @@ export default function Header() {
           {/* Logo */}
           <a href="/" className="flex items-center gap-2 group">
             <img
-              src="/favicon-32x32.png"
+              src="https://i.ibb.co/9mLfSBSQ/chat360-logo.png"
               alt="Chat360 Logo"
               className="h-10 w-10 object-contain"
             />
