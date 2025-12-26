@@ -6,7 +6,6 @@ import Features from "@/components/Features";
 import Results from "@/components/Results";
 import Testimonials from "@/components/Testimonials";
 import Comparison from "@/components/Comparison";
-import FAQ from "@/components/FAQ";
 import FinalCTA from "@/components/FinalCTA";
 import Footer from "@/components/Footer";
 
@@ -22,7 +21,6 @@ export default function Home() {
         <Results />
         <Testimonials />
         <Comparison />
-        <FAQ />
         <FinalCTA />
       </main>
       <Footer />
