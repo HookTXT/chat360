@@ -11,12 +11,33 @@ export default function Header() {
         <div className="flex items-center justify-between py-4">
           {/* Logo */}
           <a href="/" className="flex items-center gap-2 group">
-            <img
-              src="https://360.agency/wp-content/uploads/2019/06/logo_rvb_chat360-120x131.png"
-              alt="Chat360 Logo"
+            <svg
               className="h-10 w-auto"
-            />
-            <span className="text-xl font-semibold text-gray-900">Chat360</span>
+              viewBox="0 0 48 48"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              {/* Chat bubble background */}
+              <path
+                d="M4 8C4 5.79086 5.79086 4 8 4H40C42.2091 4 44 5.79086 44 8V32C44 34.2091 42.2091 36 40 36H28L18 44V36H8C5.79086 36 4 34.2091 4 32V8Z"
+                fill="#0D9488"
+              />
+              {/* Person silhouette - head */}
+              <circle cx="24" cy="15" r="5" fill="white" />
+              {/* Person silhouette - body */}
+              <path
+                d="M14 30C14 24.4772 18.4772 20 24 20C29.5228 20 34 24.4772 34 30V32H14V30Z"
+                fill="white"
+              />
+              {/* Chat lines */}
+              <rect x="36" y="10" width="4" height="2" rx="1" fill="white" />
+              <rect x="36" y="14" width="4" height="2" rx="1" fill="white" />
+              <rect x="36" y="18" width="4" height="2" rx="1" fill="white" />
+            </svg>
+            <span className="text-xl font-bold tracking-tight">
+              <span className="text-gray-700">CHAT</span>
+              <span className="text-primary">360</span>
+            </span>
           </a>
 
           {/* Desktop Navigation - Centered */}
