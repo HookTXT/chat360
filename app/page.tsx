@@ -3,7 +3,6 @@ import Hero from "@/components/Hero";
 import Problem from "@/components/Problem";
 import Solution from "@/components/Solution";
 import Features from "@/components/Features";
-import Results from "@/components/Results";
 import Testimonials from "@/components/Testimonials";
 import Comparison from "@/components/Comparison";
 import FinalCTA from "@/components/FinalCTA";
@@ -18,7 +17,6 @@ export default function Home() {
         <Problem />
         <Solution />
         <Features />
-        <Results />
         <Testimonials />
         <Comparison />
         <FinalCTA />
