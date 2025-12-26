@@ -23,11 +23,13 @@ export default function FinalCTA() {
 
               {/* Headline with Inline CTA */}
               <div className="space-y-2">
-                <h2 className="text-3xl md:text-5xl font-bold text-white leading-tight">
-                  Stop Losing Leads to Silence
+                <h2 className="text-3xl md:text-5xl font-bold leading-tight">
+                  <span className="bg-gradient-to-r from-[#2DD4BF] via-[#11766E] to-[#0D5C56] bg-clip-text text-transparent">
+                    Stop Losing Leads to Silence
+                  </span>
                 </h2>
                 <div className="flex flex-wrap items-center justify-center gap-3 md:gap-4">
-                  <span className="text-3xl md:text-5xl font-bold text-white">
+                  <span className="text-3xl md:text-5xl font-bold bg-gradient-to-r from-[#2DD4BF] via-[#11766E] to-[#0D5C56] bg-clip-text text-transparent">
                     Start Closing
                   </span>
                   <a
