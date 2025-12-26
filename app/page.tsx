@@ -1,6 +1,5 @@
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
-import Problem from "@/components/Problem";
 import Solution from "@/components/Solution";
 import Features from "@/components/Features";
 import Testimonials from "@/components/Testimonials";
@@ -13,7 +12,6 @@ export default function Home() {
       <Header />
       <main className="pt-20">
         <Hero />
-        <Problem />
         <Solution />
         <Features />
         <Testimonials />
