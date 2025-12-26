@@ -23,14 +23,6 @@ export default function HowItWorks() {
   return (
     <section className="section-padding bg-gradient-to-br from-primary-50 to-white">
       <div className="container-custom">
-        <div className="max-w-3xl mx-auto text-center space-y-4 mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold">
-            Live in <span className="text-primary">1 Day</span>.
-            <br />
-            Closing Deals by Day 1.
-          </h2>
-        </div>
-
         <div className="max-w-5xl mx-auto">
           <div className="relative">
             {/* Timeline Line */}
