@@ -15,7 +15,7 @@ export default function HowItWorks() {
     {
       days: "Days 11-14",
       title: "Launch & Optimize",
-      description: "We go live. Monitor every conversation. Tune responses based on real interactions. You're closing deals by week two.",
+      description: "We go live. Monitor every conversation. Tune responses based on real interactions. You're closing deals by day one.",
       deliverable: "Live system + ongoing optimization"
     }
   ];
@@ -25,9 +25,9 @@ export default function HowItWorks() {
       <div className="container-custom">
         <div className="max-w-3xl mx-auto text-center space-y-4 mb-16">
           <h2 className="text-4xl md:text-5xl font-bold">
-            Live in <span className="text-primary">14 Days</span>.
+            Live in <span className="text-primary">1 Day</span>.
             <br />
-            Closing Deals by Week 2.
+            Closing Deals by Day 1.
           </h2>
         </div>
 
