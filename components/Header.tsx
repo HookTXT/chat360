@@ -6,34 +6,45 @@ export default function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
-    <header className="fixed top-0 left-0 right-0 bg-white/95 backdrop-blur-sm z-50 border-b border-gray-200 shadow-sm">
-      <div className="container-custom">
+    <header className="fixed top-0 left-0 right-0 bg-white z-50">
+      <div className="max-w-7xl mx-auto px-6 lg:px-8">
         <div className="flex items-center justify-between py-4">
           {/* Logo */}
-          <a href="/" className="flex items-center gap-3 group">
-            <div className="w-10 h-10 bg-primary rounded-lg flex items-center justify-center group-hover:bg-primary-700 transition-colors">
-              <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 10h.01M12 10h.01M16 10h.01M9 16H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-5l-5 5v-5z" />
-              </svg>
-            </div>
-            <div>
-              <span className="text-xl font-bold text-gray-900">Chat360</span>
-              <span className="text-xs text-gray-500 block">by HookTXT</span>
-            </div>
+          <a href="/" className="flex items-center gap-2 group">
+            <svg className="w-8 h-8 text-primary" viewBox="0 0 32 32" fill="currentColor">
+              <path d="M16 2L18.5 9.5L26 7L23.5 14.5L31 17L23.5 19.5L26 27L18.5 24.5L16 32L13.5 24.5L6 27L8.5 19.5L1 17L8.5 14.5L6 7L13.5 9.5L16 2Z" />
+            </svg>
+            <span className="text-xl font-semibold text-gray-900">Chat360</span>
           </a>
 
-          {/* Desktop Navigation */}
+          {/* Desktop Navigation - Centered */}
           <nav className="hidden md:flex items-center gap-8">
-            <a href="#features" className="text-gray-700 hover:text-primary font-medium transition-colors">
+            <a href="#" className="text-primary font-medium">
+              Home
+            </a>
+            <a href="#features" className="text-gray-600 hover:text-gray-900 font-medium transition-colors">
               Features
             </a>
-            <a href="#pricing" className="text-gray-700 hover:text-primary font-medium transition-colors">
+            <a href="#pricing" className="text-gray-600 hover:text-gray-900 font-medium transition-colors">
               Pricing
             </a>
-            <a href="#demo" className="btn-primary">
-              Book Demo
+            <a href="#how-it-works" className="text-gray-600 hover:text-gray-900 font-medium transition-colors">
+              Solutions
             </a>
           </nav>
+
+          {/* Right Side - CTA */}
+          <div className="hidden md:flex items-center gap-4">
+            <a href="#" className="text-primary font-medium hover:text-primary-700 transition-colors">
+              Sign in
+            </a>
+            <a
+              href="#demo"
+              className="bg-primary text-white px-5 py-2.5 rounded-full font-medium hover:bg-primary-700 transition-colors"
+            >
+              Get started
+            </a>
+          </div>
 
           {/* Mobile Menu Button */}
           <button
@@ -52,29 +63,48 @@ export default function Header() {
 
         {/* Mobile Menu */}
         {mobileMenuOpen && (
-          <div className="md:hidden py-4 border-t border-gray-200">
+          <div className="md:hidden py-4 border-t border-gray-100">
             <nav className="flex flex-col gap-4">
               <a
+                href="#"
+                className="text-primary font-medium py-2"
+                onClick={() => setMobileMenuOpen(false)}
+              >
+                Home
+              </a>
+              <a
                 href="#features"
-                className="text-gray-700 hover:text-primary font-medium transition-colors py-2"
+                className="text-gray-600 hover:text-gray-900 font-medium transition-colors py-2"
                 onClick={() => setMobileMenuOpen(false)}
               >
                 Features
               </a>
               <a
                 href="#pricing"
-                className="text-gray-700 hover:text-primary font-medium transition-colors py-2"
+                className="text-gray-600 hover:text-gray-900 font-medium transition-colors py-2"
                 onClick={() => setMobileMenuOpen(false)}
               >
                 Pricing
               </a>
               <a
-                href="#demo"
-                className="btn-primary text-center"
+                href="#how-it-works"
+                className="text-gray-600 hover:text-gray-900 font-medium transition-colors py-2"
                 onClick={() => setMobileMenuOpen(false)}
               >
-                Book Demo
+                Solutions
               </a>
+              <div className="flex flex-col gap-3 pt-4 border-t border-gray-100">
+                <a href="#" className="text-primary font-medium py-2">
+                  Sign in
+                </a>
+                <a
+                  href="#demo"
+                  className="bg-primary text-white px-5 py-2.5 rounded-full font-medium text-center"
+                  onClick={() => setMobileMenuOpen(false)}
+                >
+                  Get started
+                </a>
+              </div>
             </nav>
           </div>
         )}

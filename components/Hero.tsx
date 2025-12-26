@@ -1,110 +1,156 @@
 export default function Hero() {
   return (
-    <section className="section-padding bg-gradient-to-br from-primary-50 to-white">
-      <div className="container-custom">
+    <section className="pt-24 pb-12 bg-white overflow-hidden">
+      <div className="max-w-7xl mx-auto px-6 lg:px-8">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Left Column - Text Content */}
-          <div className="space-y-8">
-            <div className="inline-block">
-              <span className="text-sm font-semibold text-primary bg-primary-100 px-4 py-2 rounded-full">
-                ✨ Powered by AI, built for Canadian dealers
-              </span>
+          <div className="space-y-6">
+            {/* Badge */}
+            <div className="inline-flex items-center gap-2 bg-primary-50 border border-primary-100 rounded-full px-4 py-2">
+              <svg className="w-4 h-4 text-primary" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12 2L14.5 9.5L22 7L19.5 14.5L27 17L19.5 19.5L22 27L14.5 24.5L12 32L9.5 24.5L2 27L4.5 19.5L-3 17L4.5 14.5L2 7L9.5 9.5L12 2Z" />
+              </svg>
+              <span className="text-sm font-medium text-primary">AI-Powered Sales Agent for Dealerships</span>
             </div>
 
-            <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold leading-tight">
-              AI That Closes Deals.{" "}
-              <span className="text-primary">Not Just Chats.</span>
+            {/* Headline */}
+            <h1 className="text-4xl md:text-5xl lg:text-[56px] font-bold leading-tight text-gray-900">
+              Turn Website Visitors into Booked Appointments with{" "}
+              <span className="text-primary">Chat360 AI</span>
             </h1>
 
-            <p className="text-xl md:text-2xl text-gray-600 leading-relaxed">
-              Chat360 turns your website visitors into booked appointments—24/7, in both English and French, with full inventory intelligence.
+            {/* Subtitle */}
+            <p className="text-lg text-gray-500 leading-relaxed max-w-lg">
+              Chat360 engages every lead on your website 24/7, in both English and French, so you can focus on closing deals and growing your dealership.
             </p>
 
-            <div className="flex flex-col sm:flex-row gap-4">
-              <a href="#demo" className="btn-primary text-center text-lg">
-                Book Your Free Demo →
+            {/* CTA and Social Proof */}
+            <div className="flex flex-wrap items-center gap-6 pt-2">
+              <a
+                href="#demo"
+                className="inline-flex items-center justify-center bg-primary text-white px-6 py-3.5 rounded-full font-medium hover:bg-primary-700 transition-colors text-base"
+              >
+                Get in touch
               </a>
-              <a href="#features" className="btn-secondary text-center text-lg">
-                See It In Action
-              </a>
-            </div>
 
-            <div className="flex flex-wrap items-center gap-6 pt-4 text-sm text-gray-600">
-              <div className="flex items-center gap-2">
-                <svg className="w-5 h-5 text-primary" fill="currentColor" viewBox="0 0 20 20">
-                  <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
-                </svg>
-                <span>Trusted by Canadian dealerships</span>
-              </div>
-              <div className="flex items-center gap-2">
-                <svg className="w-5 h-5 text-primary" fill="currentColor" viewBox="0 0 20 20">
-                  <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
-                </svg>
-                <span>Bilingual AI</span>
-              </div>
-              <div className="flex items-center gap-2">
-                <svg className="w-5 h-5 text-primary" fill="currentColor" viewBox="0 0 20 20">
-                  <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
-                </svg>
-                <span>Setup in 14 days</span>
+              {/* Avatar Stack + Rating */}
+              <div className="flex items-center gap-3">
+                <div className="flex -space-x-2">
+                  <div className="w-10 h-10 rounded-full bg-gradient-to-br from-blue-400 to-blue-600 border-2 border-white flex items-center justify-center text-white text-xs font-semibold">JD</div>
+                  <div className="w-10 h-10 rounded-full bg-gradient-to-br from-orange-400 to-red-500 border-2 border-white flex items-center justify-center text-white text-xs font-semibold">MC</div>
+                  <div className="w-10 h-10 rounded-full bg-gradient-to-br from-primary-400 to-primary-600 border-2 border-white flex items-center justify-center text-white text-xs font-semibold">PL</div>
+                </div>
+                <div className="flex flex-col">
+                  <div className="flex items-center gap-1">
+                    {[...Array(5)].map((_, i) => (
+                      <svg key={i} className={`w-4 h-4 ${i < 4 ? 'text-yellow-400' : 'text-yellow-300'}`} fill="currentColor" viewBox="0 0 20 20">
+                        <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                      </svg>
+                    ))}
+                    <span className="text-sm font-semibold text-gray-900 ml-1">4.9</span>
+                  </div>
+                  <span className="text-sm text-gray-500">50+ dealerships</span>
+                </div>
               </div>
             </div>
           </div>
 
           {/* Right Column - Visual */}
-          <div className="relative">
-            <div className="bg-white rounded-2xl shadow-2xl p-8 border border-gray-100">
-              <div className="space-y-4">
-                <div className="flex items-start gap-4">
-                  <div className="w-10 h-10 rounded-full bg-primary-100 flex items-center justify-center flex-shrink-0">
-                    <svg className="w-6 h-6 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
+          <div className="relative lg:h-[520px]">
+            {/* Background Shape */}
+            <div className="absolute right-0 top-0 w-[400px] h-[400px] lg:w-[480px] lg:h-[480px] bg-gradient-to-br from-primary-100 to-primary-200 rounded-full -z-10 translate-x-12"></div>
+
+            {/* Main Chat Window */}
+            <div className="relative bg-white rounded-3xl shadow-2xl p-6 border border-gray-100 max-w-md ml-auto mt-8">
+              {/* Chat Header */}
+              <div className="flex items-center gap-3 mb-4 pb-4 border-b border-gray-100">
+                <div className="w-10 h-10 rounded-full bg-primary flex items-center justify-center">
+                  <svg className="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 10h.01M12 10h.01M16 10h.01M9 16H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-5l-5 5v-5z" />
+                  </svg>
+                </div>
+                <div>
+                  <p className="font-semibold text-gray-900">Chat360 AI</p>
+                  <p className="text-xs text-green-500 flex items-center gap-1">
+                    <span className="w-2 h-2 bg-green-500 rounded-full"></span>
+                    Online 24/7
+                  </p>
+                </div>
+              </div>
+
+              {/* Chat Messages */}
+              <div className="space-y-3">
+                <div className="flex gap-3">
+                  <div className="w-8 h-8 rounded-full bg-gray-200 flex items-center justify-center flex-shrink-0">
+                    <svg className="w-4 h-4 text-gray-500" fill="currentColor" viewBox="0 0 20 20">
+                      <path fillRule="evenodd" d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z" clipRule="evenodd" />
                     </svg>
                   </div>
-                  <div className="flex-1">
-                    <div className="bg-gray-100 rounded-lg p-4">
-                      <p className="text-sm text-gray-700">Salut! Avez-vous un CR-V rouge automatique disponible?</p>
-                    </div>
+                  <div className="bg-gray-100 rounded-2xl rounded-tl-md px-4 py-2.5 max-w-[240px]">
+                    <p className="text-sm text-gray-700">Bonjour! Avez-vous des VUS hybrides en stock?</p>
                   </div>
                 </div>
 
-                <div className="flex items-start gap-4 justify-end">
-                  <div className="flex-1">
-                    <div className="bg-primary text-white rounded-lg p-4">
-                      <p className="text-sm">Oui! J'ai trouvé 3 Honda CR-V rouges avec transmission automatique. Le modèle 2024 EX-L est disponible à partir de 42,995$. Voulez-vous planifier un essai routier?</p>
-                    </div>
-                  </div>
-                  <div className="w-10 h-10 rounded-full bg-primary flex items-center justify-center flex-shrink-0">
-                    <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
-                    </svg>
+                <div className="flex gap-3 justify-end">
+                  <div className="bg-primary text-white rounded-2xl rounded-tr-md px-4 py-2.5 max-w-[260px]">
+                    <p className="text-sm">Oui! Nous avons 8 VUS hybrides disponibles. Le RAV4 Hybride 2024 est notre plus populaire. Voulez-vous planifier un essai?</p>
                   </div>
                 </div>
+              </div>
 
-                <div className="bg-primary-50 border border-primary-200 rounded-lg p-4 flex items-center gap-3">
-                  <div className="w-8 h-8 rounded-full bg-primary flex items-center justify-center animate-pulse">
-                    <svg className="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 20 20">
-                      <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
-                    </svg>
-                  </div>
-                  <div>
-                    <p className="text-xs font-semibold text-primary-900">HOT LEAD DETECTED</p>
-                    <p className="text-xs text-primary-700">Budget mentioned • Timeline discussed • Ready to book</p>
-                  </div>
+              {/* Progress Bar */}
+              <div className="mt-4 bg-primary-50 rounded-xl p-3">
+                <div className="flex items-center justify-between text-xs mb-2">
+                  <span className="text-primary-700 font-medium">Lead qualification</span>
+                  <span className="text-primary-600">85%</span>
+                </div>
+                <div className="w-full bg-primary-100 rounded-full h-1.5">
+                  <div className="bg-primary rounded-full h-1.5 w-[85%]"></div>
                 </div>
               </div>
             </div>
 
-            {/* Floating stats */}
-            <div className="absolute -left-4 top-1/4 bg-white rounded-xl shadow-xl p-4 border border-gray-100">
-              <p className="text-2xl font-bold text-primary">34%</p>
-              <p className="text-xs text-gray-600">Conversion rate</p>
+            {/* Floating Card - Top */}
+            <div className="absolute top-4 left-0 lg:-left-4 bg-white rounded-xl shadow-lg px-4 py-3 border border-gray-100 flex items-center gap-3">
+              <div className="flex items-center gap-2">
+                <span className="text-lg">🇨🇦</span>
+                <span className="text-lg">🇫🇷</span>
+              </div>
+              <span className="text-sm font-medium text-gray-700">Bilingual Support</span>
             </div>
 
-            <div className="absolute -right-4 bottom-1/4 bg-white rounded-xl shadow-xl p-4 border border-gray-100">
-              <p className="text-2xl font-bold text-primary">&lt;30s</p>
-              <p className="text-xs text-gray-600">Response time</p>
+            {/* Floating Card - Left */}
+            <div className="absolute bottom-24 -left-4 lg:-left-8 bg-white rounded-xl shadow-lg p-4 border border-gray-100">
+              <div className="flex items-center gap-3">
+                <div className="w-10 h-10 rounded-full bg-primary-100 flex items-center justify-center">
+                  <svg className="w-5 h-5 text-primary" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M12 2L14.5 9.5L22 7L19.5 14.5L27 17L19.5 19.5L22 27L14.5 24.5L12 32L9.5 24.5L2 27L4.5 19.5L-3 17L4.5 14.5L2 7L9.5 9.5L12 2Z" />
+                  </svg>
+                </div>
+                <div>
+                  <p className="text-xs text-gray-500">AI-Driven</p>
+                  <p className="text-sm font-semibold text-gray-900">Lead Qualification</p>
+                </div>
+              </div>
             </div>
+
+            {/* Floating Badge - Sound waves */}
+            <div className="absolute bottom-8 right-8 w-12 h-12 bg-primary rounded-full flex items-center justify-center shadow-lg">
+              <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 11a7 7 0 01-7 7m0 0a7 7 0 01-7-7m7 7v4m0 0H8m4 0h4m-4-8a3 3 0 01-3-3V5a3 3 0 116 0v6a3 3 0 01-3 3z" />
+              </svg>
+            </div>
+          </div>
+        </div>
+
+        {/* Logo Strip */}
+        <div className="mt-16 pt-8 border-t border-gray-100">
+          <p className="text-center text-sm text-gray-400 mb-6">Trusted by dealerships across Canada</p>
+          <div className="flex flex-wrap items-center justify-center gap-8 md:gap-12 opacity-60 grayscale">
+            <div className="text-2xl font-bold text-gray-400">Honda</div>
+            <div className="text-2xl font-bold text-gray-400">Toyota</div>
+            <div className="text-2xl font-bold text-gray-400">Ford</div>
+            <div className="text-2xl font-bold text-gray-400">Hyundai</div>
           </div>
         </div>
       </div>
