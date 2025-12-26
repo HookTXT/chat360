@@ -22,21 +22,6 @@ export default function Header() {
             </span>
           </a>
 
-          {/* Desktop Navigation - Centered */}
-          <nav className="hidden md:flex items-center gap-8">
-            <a href="#" className="text-primary font-medium">
-              Home
-            </a>
-            <a href="#features" className="text-gray-600 hover:text-gray-900 font-medium transition-colors">
-              Features
-            </a>
-            <a href="#pricing" className="text-gray-600 hover:text-gray-900 font-medium transition-colors">
-              Pricing
-            </a>
-            <a href="#how-it-works" className="text-gray-600 hover:text-gray-900 font-medium transition-colors">
-              Solutions
-            </a>
-          </nav>
 
           {/* Right Side - CTA */}
           <div className="hidden md:flex items-center gap-4">
@@ -69,35 +54,7 @@ export default function Header() {
         {mobileMenuOpen && (
           <div className="md:hidden py-4 border-t border-gray-100">
             <nav className="flex flex-col gap-4">
-              <a
-                href="#"
-                className="text-primary font-medium py-2"
-                onClick={() => setMobileMenuOpen(false)}
-              >
-                Home
-              </a>
-              <a
-                href="#features"
-                className="text-gray-600 hover:text-gray-900 font-medium transition-colors py-2"
-                onClick={() => setMobileMenuOpen(false)}
-              >
-                Features
-              </a>
-              <a
-                href="#pricing"
-                className="text-gray-600 hover:text-gray-900 font-medium transition-colors py-2"
-                onClick={() => setMobileMenuOpen(false)}
-              >
-                Pricing
-              </a>
-              <a
-                href="#how-it-works"
-                className="text-gray-600 hover:text-gray-900 font-medium transition-colors py-2"
-                onClick={() => setMobileMenuOpen(false)}
-              >
-                Solutions
-              </a>
-              <div className="flex flex-col gap-3 pt-4 border-t border-gray-100">
+              <div className="flex flex-col gap-3">
                 <a
                   href="https://calendly.com/hooktxt"
                   target="_blank"
