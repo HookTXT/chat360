@@ -11,9 +11,11 @@ export default function Header() {
         <div className="flex items-center justify-between py-4">
           {/* Logo */}
           <a href="/" className="flex items-center gap-2 group">
-            <svg className="w-8 h-8 text-primary" viewBox="0 0 32 32" fill="currentColor">
-              <path d="M16 2L18.5 9.5L26 7L23.5 14.5L31 17L23.5 19.5L26 27L18.5 24.5L16 32L13.5 24.5L6 27L8.5 19.5L1 17L8.5 14.5L6 7L13.5 9.5L16 2Z" />
-            </svg>
+            <img
+              src="https://360.agency/wp-content/uploads/2019/06/logo_rvb_chat360-120x131.png"
+              alt="Chat360 Logo"
+              className="h-10 w-auto"
+            />
             <span className="text-xl font-semibold text-gray-900">Chat360</span>
           </a>
 
