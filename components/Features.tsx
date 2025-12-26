@@ -215,14 +215,19 @@ export default function Features() {
         </div>
 
         {/* Bottom stat bar */}
-        <div className="mt-12 bg-gray-50 rounded-2xl p-6 flex flex-wrap items-center justify-center gap-8 md:gap-16">
+        <div className="mt-12 bg-gray-50 rounded-2xl p-8 grid grid-cols-1 md:grid-cols-3 gap-8 md:divide-x md:divide-gray-300">
           <div className="text-center">
-            <p className="text-3xl font-bold text-primary">40%</p>
-            <p className="text-sm text-gray-600">Higher engagement</p>
+            <p className="text-4xl font-bold text-primary mb-2">34%</p>
+            <p className="text-sm text-gray-600">Chat-to-appointment conversion rate</p>
           </div>
           <div className="text-center">
-            <p className="text-3xl font-bold text-primary">47%</p>
-            <p className="text-sm text-gray-600">Leads captured after hours</p>
+            <p className="text-4xl font-bold text-primary mb-2">&lt;30 sec</p>
+            <p className="text-sm text-gray-600 mb-1">Average response time</p>
+            <p className="text-xs text-gray-500">(vs. 4+ hours industry average)</p>
+          </div>
+          <div className="text-center">
+            <p className="text-4xl font-bold text-primary mb-2">47%</p>
+            <p className="text-sm text-gray-600">Leads captured outside business hours</p>
           </div>
         </div>
 
