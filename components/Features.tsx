@@ -187,8 +187,40 @@ export default function Features() {
             </div>
           </div>
 
-          {/* Card 8 - Dark - Effective Client Follow-ups */}
-          <div className="bg-primary-900 rounded-3xl p-8 relative overflow-hidden lg:col-span-2">
+          {/* Card 8 - Light - Brand Customization */}
+          <div className="bg-gray-50 rounded-3xl p-8 relative overflow-hidden">
+            <div className="w-12 h-12 bg-primary rounded-xl flex items-center justify-center text-white mb-6">
+              <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zm0 0h12a2 2 0 002-2v-4a2 2 0 00-2-2h-2.343M11 7.343l1.657-1.657a2 2 0 012.828 0l2.829 2.829a2 2 0 010 2.828l-8.486 8.485M7 17h.01" />
+              </svg>
+            </div>
+            <h3 className="text-xl font-bold text-gray-900 mb-2">Your Brand, Your Way</h3>
+            <p className="text-gray-600 text-sm mb-6">
+              Customize the look and feel of the chat to perfectly match your dealership&apos;s brand identity.
+            </p>
+            {/* Customization visual */}
+            <div className="bg-white rounded-xl p-4 shadow-sm border border-gray-100">
+              <div className="flex items-center gap-3 mb-3">
+                <div className="flex gap-1">
+                  <div className="w-4 h-4 rounded-full bg-primary"></div>
+                  <div className="w-4 h-4 rounded-full bg-blue-500"></div>
+                  <div className="w-4 h-4 rounded-full bg-red-500"></div>
+                </div>
+                <span className="text-xs text-gray-600">Brand colors</span>
+              </div>
+              <div className="flex items-center gap-3">
+                <div className="w-6 h-6 bg-gray-200 rounded flex items-center justify-center">
+                  <svg className="w-4 h-4 text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                  </svg>
+                </div>
+                <span className="text-xs text-gray-600">Custom logo</span>
+              </div>
+            </div>
+          </div>
+
+          {/* Card 9 - Dark - Effective Client Follow-ups */}
+          <div className="bg-primary-900 rounded-3xl p-8 relative overflow-hidden">
             <div className="w-12 h-12 bg-primary-700 rounded-xl flex items-center justify-center text-white mb-6">
               <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
@@ -208,6 +240,42 @@ export default function Features() {
               <div>
                 <p className="text-sm font-bold text-white">Auto-synced to CRM</p>
                 <p className="text-xs text-primary-300">Every interaction tracked</p>
+              </div>
+            </div>
+          </div>
+
+          {/* Card 10 - Light - GA4 & Shift Digital Compliance */}
+          <div className="bg-gray-50 rounded-3xl p-8 relative overflow-hidden">
+            <div className="w-12 h-12 bg-primary rounded-xl flex items-center justify-center text-white mb-6">
+              <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+              </svg>
+            </div>
+            <h3 className="text-xl font-bold text-gray-900 mb-2">OEM Compliant</h3>
+            <p className="text-gray-600 text-sm mb-6">
+              Built to meet manufacturer standards. GA4 and Shift Digital compliant out of the box.
+            </p>
+            {/* Compliance badges */}
+            <div className="space-y-2">
+              <div className="bg-white rounded-lg p-3 shadow-sm border border-gray-100">
+                <div className="flex items-center gap-2">
+                  <div className="w-6 h-6 bg-emerald-100 rounded-full flex items-center justify-center">
+                    <svg className="w-4 h-4 text-emerald-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                    </svg>
+                  </div>
+                  <span className="text-sm font-medium text-gray-700">GA4 Compliant</span>
+                </div>
+              </div>
+              <div className="bg-white rounded-lg p-3 shadow-sm border border-gray-100">
+                <div className="flex items-center gap-2">
+                  <div className="w-6 h-6 bg-emerald-100 rounded-full flex items-center justify-center">
+                    <svg className="w-4 h-4 text-emerald-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                    </svg>
+                  </div>
+                  <span className="text-sm font-medium text-gray-700">Shift Digital Certified</span>
+                </div>
               </div>
             </div>
           </div>
