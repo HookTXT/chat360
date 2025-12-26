@@ -187,6 +187,31 @@ export default function Features() {
             </div>
           </div>
 
+          {/* Card 8 - Dark - Effective Client Follow-ups */}
+          <div className="bg-primary-900 rounded-3xl p-8 relative overflow-hidden lg:col-span-2">
+            <div className="w-12 h-12 bg-primary-700 rounded-xl flex items-center justify-center text-white mb-6">
+              <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+              </svg>
+            </div>
+            <h3 className="text-xl font-bold text-white mb-2">Effective Client Follow-ups</h3>
+            <p className="text-primary-200 text-sm mb-6">
+              Ensure impeccable client follow-up with 360 CRM synchronization.
+            </p>
+            {/* Sync visual */}
+            <div className="flex items-center gap-3 bg-white/10 backdrop-blur rounded-xl p-4 border border-white/20">
+              <div className="w-10 h-10 bg-primary-700 rounded-full flex items-center justify-center">
+                <svg className="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" />
+                </svg>
+              </div>
+              <div>
+                <p className="text-sm font-bold text-white">Auto-synced to CRM</p>
+                <p className="text-xs text-primary-300">Every interaction tracked</p>
+              </div>
+            </div>
+          </div>
+
         </div>
 
         {/* Bottom stat bar */}
