@@ -17,10 +17,10 @@ export default function Features() {
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5h12M9 3v2m1.048 9.5A18.022 18.022 0 016.412 9m6.088 9h7M11 21l5-10 5 10M12.751 5C11.783 10.77 8.07 15.61 3 18.129" />
         </svg>
       ),
-      title: "Du vrai français. Pas du Google Translate.",
-      subtitle: "French That Sounds Human",
-      description: "Your customers deserve better than robotic translations. Chat360 speaks the way Quebecers actually talk. Natural. Conversational. Real.\n\n\"Check le prix su'l Civic?\" → Your AI gets it.",
-      proof: "40% higher engagement with French-native responses."
+      title: "Truly Bilingual. Not Google Translate.",
+      subtitle: "English & French That Sound Human",
+      description: "Your customers deserve better than robotic translations. Chat360 speaks naturally in both English and French—the way Canadians actually talk. Conversational. Real. Authentic.\n\n\"Check le prix su'l Civic?\" or \"What's the price on the Civic?\" → Your AI gets it.",
+      proof: "40% higher engagement with natural bilingual responses."
     },
     {
       icon: (
