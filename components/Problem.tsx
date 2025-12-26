@@ -1,111 +1,61 @@
 export default function Problem() {
   return (
-    <section className="py-20 lg:py-28 bg-[#0d6d66]">
-      <div className="container-custom">
-        <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
-          {/* Left Side - Content */}
-          <div className="space-y-10">
-            <div className="space-y-5">
-              <h2 className="text-4xl md:text-5xl lg:text-[3.25rem] font-bold text-white leading-tight">
-                You're Losing Leads<br />Right Now
-              </h2>
-              <p className="text-lg text-white/70 max-w-lg">
-                Every hour your website can't answer a customer's question, you lose money. Your visitors aren't waiting—they're clicking to your competitor.
-              </p>
-            </div>
+    <section className="py-24 lg:py-32 bg-gradient-to-br from-[#6366f1] via-[#8b5cf6] to-[#a855f7] relative overflow-hidden">
+      {/* Decorative background elements */}
+      <div className="absolute inset-0 opacity-10">
+        <div className="absolute top-20 left-20 w-64 h-64 bg-white rounded-full blur-3xl"></div>
+        <div className="absolute bottom-20 right-20 w-96 h-96 bg-white rounded-full blur-3xl"></div>
+      </div>
 
-            {/* Statistics Row */}
-            <div className="flex flex-wrap gap-8 md:gap-12">
-              <div>
-                <div className="text-5xl md:text-6xl font-bold text-white">47%</div>
-                <p className="text-white/70 mt-1">Leads after hours</p>
-              </div>
-              <div>
-                <div className="text-5xl md:text-6xl font-bold text-white">78%</div>
-                <p className="text-white/70 mt-1">First responder wins</p>
-              </div>
-              <div>
-                <div className="text-5xl md:text-6xl font-bold text-white">4+</div>
-                <p className="text-white/70 mt-1">Hours avg response</p>
-              </div>
+      <div className="container-custom relative z-10">
+        <div className="max-w-4xl mx-auto text-center space-y-12">
+          {/* Icon */}
+          <div className="flex justify-center">
+            <div className="w-20 h-20 bg-[#1e1b4b] rounded-2xl flex items-center justify-center shadow-xl">
+              <svg className="w-10 h-10 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="3">
+                <path strokeLinecap="round" strokeLinejoin="round" d="M12 4v16m8-8H4" />
+              </svg>
             </div>
           </div>
 
-          {/* Right Side - Feature Cards */}
-          <div className="bg-white rounded-3xl p-6 md:p-8 shadow-2xl">
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-              {/* Card 1 - After Hours */}
-              <div className="text-center space-y-4 p-4">
-                <div className="flex justify-center">
-                  <div className="relative">
-                    <svg className="w-16 h-16 text-[#0d6d66]" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <circle cx="32" cy="32" r="24" stroke="currentColor" strokeWidth="2" />
-                      <path d="M32 20V32L40 40" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
-                      <circle cx="32" cy="32" r="3" fill="currentColor" />
-                    </svg>
-                    <span className="absolute -top-1 -right-1 text-[#0d6d66] text-lg">+</span>
-                    <span className="absolute -bottom-1 -left-2 text-[#0d6d66] text-lg">+</span>
-                  </div>
-                </div>
-                <h3 className="font-bold text-gray-900 text-lg">After Hours<br />Inquiries</h3>
-                <p className="text-gray-500 text-sm leading-relaxed">
-                  Nearly half of all leads come in when your team is off the clock, leaving money on the table.
-                </p>
-                <div className="flex justify-center gap-1.5 pt-2">
-                  <span className="w-2 h-2 rounded-full bg-[#0d6d66]"></span>
-                  <span className="w-2 h-2 rounded-full bg-[#0d6d66]/30"></span>
-                </div>
-              </div>
+          {/* Headline */}
+          <div className="space-y-3">
+            <h2 className="text-5xl md:text-6xl lg:text-7xl font-bold text-white leading-tight">
+              Stop Losing Leads to Silence
+            </h2>
+            <p className="text-5xl md:text-6xl lg:text-7xl font-bold text-white leading-tight">
+              Start Converting 24/7
+            </p>
+          </div>
 
-              {/* Card 2 - Speed Matters */}
-              <div className="text-center space-y-4 p-4">
-                <div className="flex justify-center">
-                  <div className="relative">
-                    <svg className="w-16 h-16 text-[#0d6d66]" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <circle cx="32" cy="36" r="20" stroke="currentColor" strokeWidth="2" />
-                      <path d="M32 24V36H44" stroke="currentColor" strokeWidth="2" strokeLinecap="round" />
-                      <path d="M24 12L32 8L40 12" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
-                      <circle cx="32" cy="36" r="3" fill="currentColor" />
-                    </svg>
-                    <span className="absolute -top-1 -right-1 text-[#0d6d66] text-lg">+</span>
-                    <span className="absolute top-4 -right-3 text-[#0d6d66] text-lg">+</span>
-                  </div>
-                </div>
-                <h3 className="font-bold text-gray-900 text-lg">Speed<br />Matters</h3>
-                <p className="text-gray-500 text-sm leading-relaxed">
-                  The first dealer to respond wins the deal. Your competitors are getting faster every day.
-                </p>
-                <div className="flex justify-center gap-1.5 pt-2">
-                  <span className="w-2 h-2 rounded-full bg-[#0d6d66]/30"></span>
-                  <span className="w-2 h-2 rounded-full bg-[#0d6d66]"></span>
-                </div>
-              </div>
+          {/* CTA Button */}
+          <div className="flex justify-center pt-4">
+            <a
+              href="https://calendly.com/hooktxt"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-3 px-10 py-5 bg-white text-gray-900 text-xl font-semibold rounded-full hover:bg-gray-50 transition-all shadow-xl hover:shadow-2xl hover:scale-105"
+            >
+              Book Discovery Call
+              <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2.5">
+                <path strokeLinecap="round" strokeLinejoin="round" d="M7 17L17 7M17 7H7M17 7v10" />
+              </svg>
+            </a>
+          </div>
 
-              {/* Card 3 - Slow Response */}
-              <div className="text-center space-y-4 p-4">
-                <div className="flex justify-center">
-                  <div className="relative">
-                    <svg className="w-16 h-16 text-[#0d6d66]" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <circle cx="20" cy="28" r="8" stroke="currentColor" strokeWidth="2" />
-                      <circle cx="44" cy="28" r="8" stroke="currentColor" strokeWidth="2" />
-                      <circle cx="32" cy="44" r="8" stroke="currentColor" strokeWidth="2" />
-                      <path d="M26 32L28 40" stroke="currentColor" strokeWidth="2" strokeLinecap="round" />
-                      <path d="M38 32L36 40" stroke="currentColor" strokeWidth="2" strokeLinecap="round" />
-                      <path d="M28 28H36" stroke="currentColor" strokeWidth="2" strokeLinecap="round" />
-                    </svg>
-                    <span className="absolute -top-1 -right-1 text-[#0d6d66] text-lg">+</span>
-                    <span className="absolute top-8 -right-3 text-[#0d6d66] text-lg">+</span>
-                  </div>
-                </div>
-                <h3 className="font-bold text-gray-900 text-lg">Slow<br />Response</h3>
-                <p className="text-gray-500 text-sm leading-relaxed">
-                  Average dealership response time is over 4 hours. By then, your lead has moved on.
-                </p>
-                <div className="flex justify-center gap-1.5 pt-2">
-                  <span className="w-2 h-2 rounded-full bg-[#0d6d66]"></span>
-                  <span className="w-2 h-2 rounded-full bg-[#0d6d66]/30"></span>
-                </div>
-              </div>
+          {/* Feature Points */}
+          <div className="flex flex-wrap justify-center gap-8 pt-6">
+            <div className="flex items-center gap-2 text-white text-lg">
+              <svg className="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 20 20">
+                <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
+              </svg>
+              <span>No upfront payment</span>
+            </div>
+            <div className="flex items-center gap-2 text-white text-lg">
+              <svg className="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 20 20">
+                <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
+              </svg>
+              <span>Easy cancellation</span>
             </div>
           </div>
         </div>
