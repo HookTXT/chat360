@@ -14,10 +14,10 @@ export default function UseCases() {
       with: "AI asks qualifying questions naturally. Scores intent in real-time. Hot leads get instant alerts. Warm leads get nurtured automatically. Your team focuses on closers."
     },
     {
-      title: "The French-First Customer",
-      scenario: "Customer asks: \"Coudon, le Pilot 2024, c'est quoi le prix avec les taxes?\"",
-      without: "Robotic response. Customer feels like they're talking to a machine. Engagement drops.",
-      with: "Natural French response with exact pricing, tax included, and available colors. Customer feels understood. Conversation continues. Appointment booked."
+      title: "The Bilingual Market Reality",
+      scenario: "English customer in Ontario asks: \"What's the price on the 2024 Pilot?\" Meanwhile, French customer in Quebec asks: \"Coudon, le Pilot 2024, c'est quoi le prix avec les taxes?\"",
+      without: "Generic responses. Lost in translation. French customers feel underserved. English markets miss out on sophisticated AI.",
+      with: "Natural responses in both languages. French gets québécois-style conversation. English gets equally natural engagement. Both get exact pricing, taxes, and colors. Both book appointments."
     }
   ];
 

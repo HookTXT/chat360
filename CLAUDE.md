@@ -4,9 +4,9 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project Overview
 
-**Chat360** - Landing page for an AI-powered chat solution for Quebec auto dealerships.
+**Chat360** - Landing page for an AI-powered chat solution for Canadian auto dealerships.
 
-This is a Next.js-based marketing website showcasing Chat360, a 24/7 AI sales agent designed specifically for Quebec auto dealerships. The landing page features comprehensive copywriting, modern design, and responsive layouts.
+This is a Next.js-based marketing website showcasing Chat360, a 24/7 AI sales agent designed for Canadian auto dealerships with true bilingual capabilities (English/French). The landing page features comprehensive copywriting, modern design, and responsive layouts tailored to Canada's bilingual market.
 
 ## Technology Stack
 
@@ -149,7 +149,8 @@ Update these in:
 
 ### SEO
 - Metadata in `app/layout.tsx`
-- French language (`lang="fr"`)
+- Bilingual targeting (keywords for both English and French markets)
+- French language default (`lang="fr"`)
 - Semantic HTML structure
 - Descriptive alt text (to be added for images)
 
@@ -214,7 +215,7 @@ export const metadata: Metadata = {
 ## Notes
 
 - **No Backend**: This is a static marketing site with no server-side logic
-- **French Content**: Primary language is French (Quebec)
+- **Bilingual Market**: Targets Canadian dealerships with emphasis on bilingual capabilities (English & French)
 - **Mobile-First**: Design prioritizes mobile experience
 - **Conversion Focus**: Multiple CTAs throughout the page
 

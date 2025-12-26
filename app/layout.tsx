@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Chat360 | AI Chat pour concessionnaires automobiles | HookTXT",
-  description: "Chat360 transforme les visiteurs de votre site en rendez-vous. AI français natif, recherche d'inventaire en temps réel, lead scoring intelligent. Setup en 14 jours.",
-  keywords: ["AI chat", "auto dealers", "Quebec", "French AI", "car dealership", "lead generation"],
+  title: "Chat360 | AI Chat for Canadian Auto Dealers | HookTXT",
+  description: "Chat360 transforms your website visitors into appointments. Bilingual AI (English/French), real-time inventory search, intelligent lead scoring. Setup in 14 days.",
+  keywords: ["AI chat", "auto dealers", "Canada", "bilingual AI", "car dealership", "lead generation", "French", "English"],
 };
 
 export default function RootLayout({

@@ -63,7 +63,7 @@ export default function Solution() {
                 </li>
                 <li className="flex items-start gap-2">
                   <span className="text-primary">✓</span>
-                  <span>Native Quebec French</span>
+                  <span>Truly bilingual (English & French)</span>
                 </li>
               </ul>
             </div>
