@@ -192,10 +192,6 @@ export default function Features() {
         {/* Bottom stat bar */}
         <div className="mt-12 bg-gray-50 rounded-2xl p-6 flex flex-wrap items-center justify-center gap-8 md:gap-16">
           <div className="text-center">
-            <p className="text-3xl font-bold text-primary">400+</p>
-            <p className="text-sm text-gray-600">Vehicles searched in &lt;2 sec</p>
-          </div>
-          <div className="text-center">
             <p className="text-3xl font-bold text-primary">40%</p>
             <p className="text-sm text-gray-600">Higher engagement</p>
           </div>
