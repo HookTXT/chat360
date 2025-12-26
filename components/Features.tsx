@@ -161,6 +161,32 @@ export default function Features() {
             </div>
           </div>
 
+          {/* Card 7 - Light - Fast Deployment */}
+          <div className="bg-gray-50 rounded-3xl p-8 relative overflow-hidden">
+            <div className="w-12 h-12 bg-primary rounded-xl flex items-center justify-center text-white mb-6">
+              <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
+              </svg>
+            </div>
+            <h3 className="text-xl font-bold text-gray-900 mb-2">
+              Live in 1 Day.<br />Closing Deals by Day 1.
+            </h3>
+            <p className="text-gray-600 text-sm mb-6">
+              No lengthy setup. No weeks of training. Your AI goes live fast and starts converting immediately.
+            </p>
+            {/* Timeline visual */}
+            <div className="bg-white rounded-xl p-4 shadow-sm border border-gray-100">
+              <div className="flex items-center gap-2 mb-2">
+                <div className="w-8 h-8 bg-primary rounded-full flex items-center justify-center text-white text-xs font-bold">1</div>
+                <span className="text-xs text-gray-600">Day to launch</span>
+              </div>
+              <div className="flex items-center gap-2">
+                <div className="w-8 h-8 bg-emerald-500 rounded-full flex items-center justify-center text-white text-xs font-bold">✓</div>
+                <span className="text-xs text-gray-600">Closing deals immediately</span>
+              </div>
+            </div>
+          </div>
+
         </div>
 
         {/* Bottom stat bar */}
