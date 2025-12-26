@@ -2,6 +2,26 @@ export default function Hero() {
   return (
     <section className="pt-24 pb-12 bg-white overflow-hidden">
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
+        {/* Hero Headline Section */}
+        <div className="text-center mb-12">
+          {/* Gradient Pills */}
+          <div className="flex justify-center gap-3 mb-8">
+            <span className="inline-block px-4 py-2 rounded-full text-sm font-medium text-white" style={{ background: 'linear-gradient(135deg, #144E4A 0%, #99F6E4 100%)' }}>24/7 AI Sales</span>
+            <span className="inline-block px-4 py-2 rounded-full text-sm font-medium text-white" style={{ background: 'linear-gradient(135deg, #144E4A 0%, #99F6E4 100%)' }}>Bilingual</span>
+            <span className="inline-block px-4 py-2 rounded-full text-sm font-medium text-white" style={{ background: 'linear-gradient(135deg, #144E4A 0%, #99F6E4 100%)' }}>Auto Dealers</span>
+          </div>
+
+          {/* Main Headline */}
+          <div className="bg-gray-900 rounded-3xl py-12 px-8 mb-8">
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight">
+              Stop Losing Leads to Silence
+            </h1>
+            <p className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mt-4">
+              Start Closing
+            </p>
+          </div>
+        </div>
+
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Left Column - Text Content */}
           <div className="space-y-6">
@@ -14,10 +34,10 @@ export default function Hero() {
             </div>
 
             {/* Headline */}
-            <h1 className="text-4xl md:text-5xl lg:text-[56px] font-bold leading-tight text-gray-900">
+            <h2 className="text-3xl md:text-4xl lg:text-[48px] font-bold leading-tight text-gray-900">
               Turn Website Visitors into Booked Appointments with{" "}
               <span className="text-primary">Chat360 AI</span>
-            </h1>
+            </h2>
 
             {/* Subtitle */}
             <p className="text-lg text-gray-500 leading-relaxed max-w-lg">
