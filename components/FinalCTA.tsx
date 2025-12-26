@@ -24,12 +24,12 @@ export default function FinalCTA() {
               {/* Headline with Inline CTA */}
               <div className="space-y-2">
                 <h2 className="text-3xl md:text-5xl font-bold leading-tight">
-                  <span className="bg-gradient-to-r from-[#2DD4BF] via-[#11766E] to-[#0D5C56] bg-clip-text text-transparent">
+                  <span className="text-white">
                     Stop Losing Leads to Silence
                   </span>
                 </h2>
                 <div className="flex flex-wrap items-center justify-center gap-3 md:gap-4">
-                  <span className="text-3xl md:text-5xl font-bold bg-gradient-to-r from-[#2DD4BF] via-[#11766E] to-[#0D5C56] bg-clip-text text-transparent">
+                  <span className="text-3xl md:text-5xl font-bold text-white">
                     Start Closing
                   </span>
                   <a
@@ -49,7 +49,7 @@ export default function FinalCTA() {
               {/* Trust Pills */}
               <div className="flex flex-wrap items-center justify-center gap-4 pt-4">
                 <div className="flex items-center gap-2 text-white/90">
-                  <div className="w-5 h-5 bg-indigo-400 rounded-full flex items-center justify-center">
+                  <div className="w-5 h-5 bg-gradient-to-r from-[#144E4A] to-[#99F6E4] rounded-full flex items-center justify-center">
                     <svg className="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
                       <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                     </svg>
@@ -57,7 +57,7 @@ export default function FinalCTA() {
                   <span className="text-sm md:text-base">43% Lead ratio</span>
                 </div>
                 <div className="flex items-center gap-2 text-white/90">
-                  <div className="w-5 h-5 bg-indigo-400 rounded-full flex items-center justify-center">
+                  <div className="w-5 h-5 bg-gradient-to-r from-[#144E4A] to-[#99F6E4] rounded-full flex items-center justify-center">
                     <svg className="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
                       <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                     </svg>
@@ -65,7 +65,7 @@ export default function FinalCTA() {
                   <span className="text-sm md:text-base">Sync with CRM</span>
                 </div>
                 <div className="flex items-center gap-2 text-white/90">
-                  <div className="w-5 h-5 bg-indigo-400 rounded-full flex items-center justify-center">
+                  <div className="w-5 h-5 bg-gradient-to-r from-[#144E4A] to-[#99F6E4] rounded-full flex items-center justify-center">
                     <svg className="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
                       <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                     </svg>
