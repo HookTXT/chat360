@@ -3,7 +3,6 @@ import Hero from "@/components/Hero";
 import Problem from "@/components/Problem";
 import Solution from "@/components/Solution";
 import Features from "@/components/Features";
-import HowItWorks from "@/components/HowItWorks";
 import Results from "@/components/Results";
 import Testimonials from "@/components/Testimonials";
 import Comparison from "@/components/Comparison";
@@ -20,7 +19,6 @@ export default function Home() {
         <Problem />
         <Solution />
         <Features />
-        <HowItWorks />
         <Results />
         <Testimonials />
         <Comparison />
