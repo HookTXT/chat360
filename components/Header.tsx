@@ -37,14 +37,13 @@ export default function Header() {
 
           {/* Right Side - CTA */}
           <div className="hidden md:flex items-center gap-4">
-            <a href="#" className="text-primary font-medium hover:text-primary-700 transition-colors">
-              Sign in
-            </a>
             <a
-              href="#demo"
+              href="https://calendly.com/hooktxt"
+              target="_blank"
+              rel="noopener noreferrer"
               className="bg-primary text-white px-5 py-2.5 rounded-full font-medium hover:bg-primary-700 transition-colors"
             >
-              Get started
+              Book a Demo
             </a>
           </div>
 
@@ -96,15 +95,14 @@ export default function Header() {
                 Solutions
               </a>
               <div className="flex flex-col gap-3 pt-4 border-t border-gray-100">
-                <a href="#" className="text-primary font-medium py-2">
-                  Sign in
-                </a>
                 <a
-                  href="#demo"
+                  href="https://calendly.com/hooktxt"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="bg-primary text-white px-5 py-2.5 rounded-full font-medium text-center"
                   onClick={() => setMobileMenuOpen(false)}
                 >
-                  Get started
+                  Book a Demo
                 </a>
               </div>
             </nav>
