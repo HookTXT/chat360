@@ -1,4 +1,13 @@
+"use client";
+
+import { useState } from "react";
+
 export default function Hero() {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
+  const openModal = () => setIsModalOpen(true);
+  const closeModal = () => setIsModalOpen(false);
+
   return (
     <section className="pt-24 pb-12 bg-white overflow-hidden">
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
@@ -26,12 +35,15 @@ export default function Hero() {
 
             {/* CTA and Social Proof */}
             <div className="flex flex-wrap items-center gap-6 pt-2">
-              <a
-                href="#demo"
-                className="inline-flex items-center justify-center bg-primary text-white px-6 py-3.5 rounded-full font-medium hover:bg-primary-700 transition-colors text-base"
+              <button
+                onClick={openModal}
+                className="inline-flex items-center justify-center gap-2 bg-primary text-white px-6 py-3.5 rounded-full font-medium hover:bg-primary-700 transition-colors text-base"
               >
-                Get in touch
-              </a>
+                <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                  <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z" clipRule="evenodd" />
+                </svg>
+                Watch video
+              </button>
 
               {/* Avatar Stack + Rating */}
               <div className="flex items-center gap-3">
@@ -148,6 +160,39 @@ export default function Hero() {
           </div>
         </div>
       </div>
+
+      {/* Video Modal */}
+      {isModalOpen && (
+        <div
+          className="fixed inset-0 z-50 flex items-center justify-center bg-black/70 backdrop-blur-sm"
+          onClick={closeModal}
+        >
+          <div
+            className="relative w-full max-w-4xl mx-4 aspect-video"
+            onClick={(e) => e.stopPropagation()}
+          >
+            {/* Close Button */}
+            <button
+              onClick={closeModal}
+              className="absolute -top-12 right-0 text-white hover:text-gray-300 transition-colors"
+              aria-label="Close video"
+            >
+              <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+              </svg>
+            </button>
+
+            {/* YouTube Embed */}
+            <iframe
+              className="w-full h-full rounded-xl shadow-2xl"
+              src="https://www.youtube.com/embed/Wy3WkukiDIE?autoplay=1&rel=0"
+              title="Chat360 Video"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+            />
+          </div>
+        </div>
+      )}
     </section>
   );
 }
