@@ -52,7 +52,7 @@ export default function FinalCTA() {
                       <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                     </svg>
                   </div>
-                  <span className="text-sm md:text-base">No upfront payment</span>
+                  <span className="text-sm md:text-base">43% Lead ratio</span>
                 </div>
                 <div className="flex items-center gap-2 text-white/90">
                   <div className="w-5 h-5 bg-indigo-400 rounded-full flex items-center justify-center">
@@ -60,7 +60,7 @@ export default function FinalCTA() {
                       <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                     </svg>
                   </div>
-                  <span className="text-sm md:text-base">Easy cancellation</span>
+                  <span className="text-sm md:text-base">Sync with CRM</span>
                 </div>
                 <div className="flex items-center gap-2 text-white/90">
                   <div className="w-5 h-5 bg-indigo-400 rounded-full flex items-center justify-center">
@@ -68,7 +68,7 @@ export default function FinalCTA() {
                       <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                     </svg>
                   </div>
-                  <span className="text-sm md:text-base">Live in 14 days</span>
+                  <span className="text-sm md:text-base">Custom build possible</span>
                 </div>
               </div>
             </div>
