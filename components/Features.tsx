@@ -47,7 +47,7 @@ export default function Features() {
             </div>
           </div>
 
-          {/* Card 2 - Dark - Bilingual - Larger Card */}
+          {/* Card 2 - Dark - Multilingual - Larger Card */}
           <div className="bg-primary-900 rounded-3xl p-8 relative overflow-hidden lg:col-span-2">
             <div className="w-12 h-12 bg-primary-700 rounded-xl flex items-center justify-center text-white mb-6">
               <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -55,20 +55,24 @@ export default function Features() {
               </svg>
             </div>
             <h3 className="text-2xl font-bold text-white mb-3">
-              Truly Bilingual.<br />Not Google Translate.
+              Smart Language Detection.<br />Not Google Translate.
             </h3>
             <p className="text-primary-200 mb-8 max-w-md">
-              Your customers deserve better than robotic translations. Chat360 speaks naturally in both English and French—the way Canadians actually talk.
+              Chat360 automatically detects your customer&apos;s language and responds naturally. English, French, Mandarin, Spanish, and more—your AI adapts instantly to serve every customer.
             </p>
             {/* Decorative chat bubbles */}
             <div className="flex gap-4 flex-wrap">
               <div className="bg-white/10 backdrop-blur rounded-2xl px-4 py-3 border border-white/20">
                 <p className="text-white text-sm font-medium">&ldquo;Check le prix su&apos;l Civic?&rdquo;</p>
-                <p className="text-primary-300 text-xs mt-1">Understood instantly</p>
+                <p className="text-primary-300 text-xs mt-1">French detected</p>
               </div>
               <div className="bg-white/10 backdrop-blur rounded-2xl px-4 py-3 border border-white/20">
                 <p className="text-white text-sm font-medium">&ldquo;What&apos;s the price on the Civic?&rdquo;</p>
-                <p className="text-primary-300 text-xs mt-1">Same smart response</p>
+                <p className="text-primary-300 text-xs mt-1">English detected</p>
+              </div>
+              <div className="bg-white/10 backdrop-blur rounded-2xl px-4 py-3 border border-white/20">
+                <p className="text-white text-sm font-medium">&ldquo;Civic 多少钱？&rdquo;</p>
+                <p className="text-primary-300 text-xs mt-1">Mandarin detected</p>
               </div>
             </div>
             {/* Background decoration */}
