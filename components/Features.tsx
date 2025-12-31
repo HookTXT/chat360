@@ -284,6 +284,132 @@ export default function Features() {
             </div>
           </div>
 
+          {/* Card 11 - Light - Human Takeover */}
+          <div className="bg-gray-50 rounded-3xl p-8 relative overflow-hidden">
+            <div className="w-12 h-12 bg-primary rounded-xl flex items-center justify-center text-white mb-6">
+              <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
+              </svg>
+            </div>
+            <h3 className="text-xl font-bold text-gray-900 mb-2">Human Takeover</h3>
+            <p className="text-gray-600 text-sm mb-6">
+              Jump into any conversation whenever you want. Take control of a chat with one click when a human touch is needed.
+            </p>
+            {/* Takeover visual */}
+            <div className="bg-white rounded-xl p-4 shadow-sm border border-gray-100">
+              <div className="flex items-center justify-between mb-3">
+                <div className="flex items-center gap-2">
+                  <div className="w-8 h-8 bg-primary-100 rounded-full flex items-center justify-center">
+                    <svg className="w-4 h-4 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" />
+                    </svg>
+                  </div>
+                  <span className="text-xs text-gray-600">Live chat in progress</span>
+                </div>
+                <button className="bg-primary text-white text-xs px-3 py-1.5 rounded-lg font-medium">
+                  Take Over
+                </button>
+              </div>
+              <p className="text-xs text-gray-500">Seamlessly switch from AI to human</p>
+            </div>
+          </div>
+
+          {/* Card 12 - Dark - Dashboard - Larger Card */}
+          <div className="bg-primary-900 rounded-3xl p-8 relative overflow-hidden lg:col-span-2">
+            <div className="w-12 h-12 bg-primary-700 rounded-xl flex items-center justify-center text-white mb-6">
+              <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 17V7m0 10a2 2 0 01-2 2H5a2 2 0 01-2-2V7a2 2 0 012-2h2a2 2 0 012 2m0 10a2 2 0 002 2h2a2 2 0 002-2M9 7a2 2 0 012-2h2a2 2 0 012 2m0 10V7m0 10a2 2 0 002 2h2a2 2 0 002-2V7a2 2 0 00-2-2h-2a2 2 0 00-2 2" />
+              </svg>
+            </div>
+            <h3 className="text-2xl font-bold text-white mb-3">
+              Your Command Center.<br />Complete Control.
+            </h3>
+            <p className="text-primary-200 mb-8 max-w-md">
+              Analyze conversations, review reports, take over chats, and continuously improve your AI. Everything your team needs to build the best AI for your business.
+            </p>
+            {/* Dashboard features */}
+            <div className="flex gap-4 flex-wrap">
+              <div className="bg-white/10 backdrop-blur rounded-2xl px-4 py-3 border border-white/20">
+                <div className="flex items-center gap-2">
+                  <svg className="w-4 h-4 text-primary-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
+                  </svg>
+                  <span className="text-white text-sm font-medium">Analytics</span>
+                </div>
+              </div>
+              <div className="bg-white/10 backdrop-blur rounded-2xl px-4 py-3 border border-white/20">
+                <div className="flex items-center gap-2">
+                  <svg className="w-4 h-4 text-primary-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                  </svg>
+                  <span className="text-white text-sm font-medium">Reports</span>
+                </div>
+              </div>
+              <div className="bg-white/10 backdrop-blur rounded-2xl px-4 py-3 border border-white/20">
+                <div className="flex items-center gap-2">
+                  <svg className="w-4 h-4 text-primary-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" />
+                  </svg>
+                  <span className="text-white text-sm font-medium">Live Takeover</span>
+                </div>
+              </div>
+              <div className="bg-white/10 backdrop-blur rounded-2xl px-4 py-3 border border-white/20">
+                <div className="flex items-center gap-2">
+                  <svg className="w-4 h-4 text-primary-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4" />
+                  </svg>
+                  <span className="text-white text-sm font-medium">AI Training</span>
+                </div>
+              </div>
+            </div>
+            {/* Background decoration */}
+            <div className="absolute -right-10 -bottom-10 w-64 h-64 bg-primary-800 rounded-full opacity-50"></div>
+            <div className="absolute right-20 bottom-20 w-32 h-32 bg-primary-700 rounded-full opacity-30"></div>
+          </div>
+
+          {/* Card 13 - Light - AI Tone & Approach */}
+          <div className="bg-gray-50 rounded-3xl p-8 relative overflow-hidden">
+            <div className="w-12 h-12 bg-primary rounded-xl flex items-center justify-center text-white mb-6">
+              <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4" />
+              </svg>
+            </div>
+            <h3 className="text-xl font-bold text-gray-900 mb-2">Fine-Tune Your AI</h3>
+            <p className="text-gray-600 text-sm mb-6">
+              Adjust the AI&apos;s tone and approach based on lead scores. Hot leads get urgency, browsers get nurturing.
+            </p>
+            {/* Tone adjustment visual */}
+            <div className="bg-white rounded-xl p-4 shadow-sm border border-gray-100 space-y-3">
+              <div>
+                <div className="flex items-center justify-between mb-1">
+                  <span className="text-xs text-gray-600">Friendliness</span>
+                  <span className="text-xs font-medium text-primary">High</span>
+                </div>
+                <div className="w-full bg-gray-200 rounded-full h-1.5">
+                  <div className="bg-primary h-1.5 rounded-full" style={{ width: '85%' }}></div>
+                </div>
+              </div>
+              <div>
+                <div className="flex items-center justify-between mb-1">
+                  <span className="text-xs text-gray-600">Urgency</span>
+                  <span className="text-xs font-medium text-amber-600">Medium</span>
+                </div>
+                <div className="w-full bg-gray-200 rounded-full h-1.5">
+                  <div className="bg-amber-500 h-1.5 rounded-full" style={{ width: '50%' }}></div>
+                </div>
+              </div>
+              <div>
+                <div className="flex items-center justify-between mb-1">
+                  <span className="text-xs text-gray-600">Detail Level</span>
+                  <span className="text-xs font-medium text-emerald-600">Balanced</span>
+                </div>
+                <div className="w-full bg-gray-200 rounded-full h-1.5">
+                  <div className="bg-emerald-500 h-1.5 rounded-full" style={{ width: '65%' }}></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
         </div>
 
         {/* Bottom stat bar */}
