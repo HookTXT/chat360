@@ -10,7 +10,7 @@ export default function Header() {
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
         <div className="flex items-center justify-between py-4">
           {/* Logo */}
-          <a href="/" className="flex items-center gap-2 group">
+          <a href="/fr" className="flex items-center gap-2 group">
             <img
               src="https://i.ibb.co/9mLfSBSQ/chat360-logo.png"
               alt="Chat360 Logo"
@@ -26,11 +26,11 @@ export default function Header() {
           {/* Right Side - Language Switcher + CTA */}
           <div className="hidden md:flex items-center gap-4">
             <a
-              href="/fr"
+              href="/"
               className="flex items-center gap-2 text-gray-600 hover:text-primary transition-colors px-3 py-2 rounded-lg hover:bg-gray-50"
             >
-              <span className="text-lg">🇫🇷</span>
-              <span className="text-sm font-medium">FR</span>
+              <span className="text-lg">🇬🇧</span>
+              <span className="text-sm font-medium">EN</span>
             </a>
             <a
               href="https://calendly.com/hooktxt"
@@ -38,7 +38,7 @@ export default function Header() {
               rel="noopener noreferrer"
               className="bg-primary text-white px-5 py-2.5 rounded-full font-medium hover:bg-primary-700 transition-colors"
             >
-              Book a Demo
+              Réserver une démo
             </a>
           </div>
 
@@ -62,11 +62,11 @@ export default function Header() {
           <div className="md:hidden py-4 border-t border-gray-100">
             <nav className="flex flex-col gap-4">
               <a
-                href="/fr"
+                href="/"
                 className="flex items-center gap-2 text-gray-600 hover:text-primary transition-colors px-3 py-2"
               >
-                <span className="text-lg">🇫🇷</span>
-                <span className="text-sm font-medium">Français</span>
+                <span className="text-lg">🇬🇧</span>
+                <span className="text-sm font-medium">English</span>
               </a>
               <div className="flex flex-col gap-3">
                 <a
@@ -76,7 +76,7 @@ export default function Header() {
                   className="bg-primary text-white px-5 py-2.5 rounded-full font-medium text-center"
                   onClick={() => setMobileMenuOpen(false)}
                 >
-                  Book a Demo
+                  Réserver une démo
                 </a>
               </div>
             </nav>
