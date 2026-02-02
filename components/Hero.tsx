@@ -108,6 +108,20 @@ export default function Hero() {
                     <p className="text-sm">Oui! Nous avons 8 VUS hybrides disponibles. Le RAV4 Hybride 2024 est notre plus populaire. Voulez-vous planifier un essai?</p>
                   </div>
                 </div>
+
+                {/* Typing Indicator */}
+                <div className="flex gap-3">
+                  <div className="w-8 h-8 rounded-full bg-gray-200 flex items-center justify-center flex-shrink-0">
+                    <svg className="w-4 h-4 text-gray-500" fill="currentColor" viewBox="0 0 20 20">
+                      <path fillRule="evenodd" d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z" clipRule="evenodd" />
+                    </svg>
+                  </div>
+                  <div className="bg-gray-100 rounded-2xl rounded-tl-md px-4 py-3 flex items-center gap-1">
+                    <span className="typing-dot w-2 h-2 bg-gray-400 rounded-full inline-block"></span>
+                    <span className="typing-dot w-2 h-2 bg-gray-400 rounded-full inline-block"></span>
+                    <span className="typing-dot w-2 h-2 bg-gray-400 rounded-full inline-block"></span>
+                  </div>
+                </div>
               </div>
 
               {/* Progress Bar */}
