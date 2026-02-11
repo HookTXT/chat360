@@ -30,7 +30,7 @@ export default function RootLayout({
         {children}
         <Script
           src="https://chatwidgetpro.com/embed/widget.js"
-          data-widget-id="8447cbc5-0606-47e6-b17a-363efea204fb"
+          data-widget-id="42976402-cac6-466f-9f14-e0de1fc33d43"
           data-supabase-url="https://mjnuenpyxmybuwumwmma.supabase.co"
           data-supabase-key="eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im1qbnVlbnB5eG15YnV3dW13bW1hIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NjQ5NzI1MTUsImV4cCI6MjA4MDU0ODUxNX0.93BMKobQZec97F8fvHZPC-QdeQ1f8FYmC_-akqv1-dA"
           strategy="afterInteractive"
