@@ -32,6 +32,7 @@ export default function Header() {
               <span className="text-lg">🇫🇷</span>
               <span className="text-sm font-medium">FR</span>
             </a>
+            {/* Book a Demo button hidden for now
             <a
               href="https://calendly.com/hooktxt"
               target="_blank"
@@ -40,6 +41,7 @@ export default function Header() {
             >
               Book a Demo
             </a>
+            */}
           </div>
 
           {/* Mobile Menu Button */}
@@ -68,6 +70,7 @@ export default function Header() {
                 <span className="text-lg">🇫🇷</span>
                 <span className="text-sm font-medium">Français</span>
               </a>
+              {/* Book a Demo button hidden for now
               <div className="flex flex-col gap-3">
                 <a
                   href="https://calendly.com/hooktxt"
@@ -79,6 +82,7 @@ export default function Header() {
                   Book a Demo
                 </a>
               </div>
+              */}
             </nav>
           </div>
         )}
