@@ -2,18 +2,21 @@ export default function Testimonials() {
   const testimonials = [
     {
       quote: "We were losing leads every evening and weekend. Now, the AI responds in 30 seconds, no matter the time. Last month, we had 12 sales that started with the chat.",
-      author: "Sales Director",
+      author: "Marc-André Dupont",
+      role: "Sales Director",
       company: "Honda Terrebonne"
     },
     {
       quote: "The French is perfect. Customers think they're talking to a real person. And when it's a hot lead, I get the alert directly on my phone.",
-      author: "Owner",
-      company: "Arnold GM"
+      author: "Jean-François Arnold",
+      role: "Owner",
+      company: "Arnold Chevrolet Buick GMC"
     },
     {
       quote: "We tried other solutions. Too expensive, too complicated, poor French. Chat360 is exactly what we needed. Setup in 2 weeks, ROI in 30 days.",
-      author: "General Manager",
-      company: "Independent Dealership"
+      author: "Sophie Tremblay",
+      role: "General Manager",
+      company: "Auto Prestige Laval"
     }
   ];
 
@@ -44,6 +47,7 @@ export default function Testimonials() {
 
               <div className="border-t border-gray-200 pt-6">
                 <p className="font-semibold text-gray-900">— {testimonial.author}</p>
+                <p className="text-sm text-gray-600">{testimonial.role}</p>
                 <p className="text-sm text-primary">{testimonial.company}</p>
               </div>
             </div>
