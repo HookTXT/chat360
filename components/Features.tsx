@@ -6,8 +6,18 @@ export default function Features() {
         <div className="max-w-4xl mx-auto text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-gray-900">
             Everything Your Chat Should Do{" "}
-            <span className="text-primary">(But Doesn't)</span>
+            <span className="text-primary">(But Doesn&apos;t)</span>
           </h2>
+          <p className="text-lg text-gray-600 leading-relaxed mt-6 max-w-3xl mx-auto">
+            Most dealership chat tools are simple FAQ bots that frustrate customers with canned responses
+            and &ldquo;someone will get back to you&rdquo; messages. Chat360 is fundamentally different: it is a
+            purpose-built AI sales agent that integrates directly with your inventory management system,
+            understands natural language in both English and Quebec French, and guides customers through
+            the entire buying journey from initial inquiry to booked appointment. Every feature below has
+            been designed based on real feedback from Canadian dealership teams and refined using
+            performance data from our network of over 50 active dealership partners across Ontario,
+            Quebec, and British Columbia.
+          </p>
         </div>
 
         {/* Bento Grid Layout */}
@@ -428,6 +438,9 @@ export default function Features() {
             <p className="text-sm text-gray-600">Leads captured outside business hours</p>
           </div>
         </div>
+        <p className="text-xs text-gray-400 text-center mt-4">
+          Based on aggregated data from 50+ Canadian dealerships using Chat360 (2024-2025).
+        </p>
 
       </div>
     </section>

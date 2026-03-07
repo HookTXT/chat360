@@ -9,8 +9,16 @@ export default function Solution() {
 
           <p className="text-xl text-gray-600 leading-relaxed">
             Chat360 is AI that <strong>actually sells</strong>. Not a glorified FAQ bot.
-            Not a "we'll get back to you" message. A real sales conversation that knows
-            your inventory, speaks your customer's language, and books appointments while you sleep.
+            Not a &ldquo;we&apos;ll get back to you&rdquo; message. A real sales conversation that knows
+            your inventory, speaks your customer&apos;s language, and books appointments while you sleep.
+            In Canada&apos;s bilingual automotive market, most dealerships lose up to 60% of after-hours
+            web leads because no one is available to respond. Chat360 changes that with an AI sales
+            agent trained specifically on Quebec French and Canadian English, capable of searching your
+            real-time inventory, qualifying leads based on buying signals like budget, timeline, and
+            trade-in readiness, and booking test drive appointments directly into your calendar. Based
+            on aggregated performance data from over 50 Canadian dealerships using Chat360, the platform
+            achieves a 34% chat-to-appointment conversion rate and captures 47% of total leads outside
+            of regular business hours.
           </p>
 
           <div className="grid md:grid-cols-2 gap-6 pt-8">
