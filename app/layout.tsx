@@ -261,8 +261,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         />
         {children}
         <Script
-          src="https://chatwidgetpro.com/embed/widget.js"
-          data-widget-id="8447cbc5-0606-47e6-b17a-363efea204fb"
+          src="https://widget.hooktxt.com/embed/widget.js"
+          data-widget-id="2fd241dc-f7cd-4e6a-bdd9-e8bb3612d900"
           data-supabase-url="https://mjnuenpyxmybuwumwmma.supabase.co"
           data-supabase-key="eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im1qbnVlbnB5eG15YnV3dW13bW1hIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NjQ5NzI1MTUsImV4cCI6MjA4MDU0ODUxNX0.93BMKobQZec97F8fvHZPC-QdeQ1f8FYmC_-akqv1-dA"
           strategy="afterInteractive"
