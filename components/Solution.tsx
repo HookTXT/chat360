@@ -46,6 +46,14 @@ export default function Solution() {
                   <span className="text-red-600">✗</span>
                   <span>Robotic translations</span>
                 </li>
+                <li className="flex items-start gap-2">
+                  <span className="text-red-600">✗</span>
+                  <span>Bare links to click</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="text-red-600">✗</span>
+                  <span>Waits for the customer to ask</span>
+                </li>
               </ul>
             </div>
 
@@ -72,6 +80,14 @@ export default function Solution() {
                 <li className="flex items-start gap-2">
                   <span className="text-primary">✓</span>
                   <span>Truly bilingual (English & French)</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="text-primary">✓</span>
+                  <span>Dynamic vehicle cards with real photos</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="text-primary">✓</span>
+                  <span>Speaks first—by text or voice—like a real salesperson</span>
                 </li>
               </ul>
             </div>

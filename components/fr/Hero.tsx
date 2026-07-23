@@ -19,7 +19,7 @@ export default function Hero() {
               <svg className="w-4 h-4 text-primary" viewBox="0 0 24 24" fill="currentColor">
                 <path d="M12 2L14.5 9.5L22 7L19.5 14.5L27 17L19.5 19.5L22 27L14.5 24.5L12 32L9.5 24.5L2 27L4.5 19.5L-3 17L4.5 14.5L2 7L9.5 9.5L12 2Z" />
               </svg>
-              <span className="text-sm font-medium text-primary">Agent de vente IA pour concessionnaires</span>
+              <span className="text-sm font-medium text-primary">Nouveau · IA vocale + vente proactive</span>
             </div>
 
             {/* Headline */}
@@ -30,7 +30,9 @@ export default function Hero() {
 
             {/* Subtitle */}
             <p className="text-lg text-gray-500 leading-relaxed max-w-lg">
-              Chat360 engage chaque prospect sur votre site web 24/7, en français et en anglais, pour que vous puissiez vous concentrer sur la conclusion de ventes et la croissance de votre concession.
+              Chat360 engage chaque prospect sur votre site web 24/7&mdash;par texte ou par la voix.
+              Il parle en premier, met en valeur le bon véhicule à voix haute comme votre meilleur
+              vendeur, et prend le rendez-vous. En français et en anglais.
             </p>
 
             {/* CTA and Social Proof */}
@@ -156,6 +158,24 @@ export default function Hero() {
                 <div>
                   <p className="text-xs text-gray-500">Propulsé par l&apos;IA</p>
                   <p className="text-sm font-semibold text-gray-900">Qualification des prospects</p>
+                </div>
+              </div>
+            </div>
+
+            {/* Carte flottante - IA vocale */}
+            <div className="absolute -bottom-6 right-2 lg:-right-4 bg-white rounded-xl shadow-lg p-4 border border-gray-100">
+              <div className="flex items-center gap-3">
+                <div className="relative w-10 h-10 flex-shrink-0 flex items-center justify-center">
+                  <span className="voice-pulse absolute inset-0 rounded-full bg-purple-300"></span>
+                  <div className="relative w-10 h-10 rounded-full bg-gradient-to-br from-fuchsia-500 via-purple-500 to-indigo-500 flex items-center justify-center">
+                    <svg className="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 11a7 7 0 01-14 0m7 7v4m0-4a3 3 0 003-3V6a3 3 0 00-6 0v6a3 3 0 003 3z" />
+                    </svg>
+                  </div>
+                </div>
+                <div>
+                  <p className="text-xs text-gray-500">IA vocale</p>
+                  <p className="text-sm font-semibold text-gray-900">Parle en premier, à voix haute</p>
                 </div>
               </div>
             </div>
