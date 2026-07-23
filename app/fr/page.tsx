@@ -2,6 +2,7 @@ import Header from "@/components/fr/Header";
 import Hero from "@/components/fr/Hero";
 import Solution from "@/components/fr/Solution";
 import Features from "@/components/fr/Features";
+import VoiceAI from "@/components/fr/VoiceAI";
 import Testimonials from "@/components/fr/Testimonials";
 import FinalCTA from "@/components/fr/FinalCTA";
 import Footer from "@/components/fr/Footer";
@@ -14,6 +15,7 @@ export default function Home() {
         <Hero />
         <Solution />
         <Features />
+        <VoiceAI />
         <Testimonials />
         <FinalCTA />
       </main>
