@@ -75,18 +75,6 @@ export default function VoiceAI() {
                 </div>
               </div>
             </div>
-
-            <a
-              href="https://calendly.com/hooktxt"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 bg-primary text-white px-6 py-3.5 rounded-full font-medium hover:bg-primary-700 transition-colors text-base"
-            >
-              See it live in a demo
-              <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M7 17L17 7M17 7H7M17 7v10" />
-              </svg>
-            </a>
           </div>
 
           {/* Right — voice orb mockup */}
