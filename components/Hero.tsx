@@ -19,7 +19,7 @@ export default function Hero() {
               <svg className="w-4 h-4 text-primary" viewBox="0 0 24 24" fill="currentColor">
                 <path d="M12 2L14.5 9.5L22 7L19.5 14.5L27 17L19.5 19.5L22 27L14.5 24.5L12 32L9.5 24.5L2 27L4.5 19.5L-3 17L4.5 14.5L2 7L9.5 9.5L12 2Z" />
               </svg>
-              <span className="text-sm font-medium text-primary">AI-Powered Sales Agent for Dealerships</span>
+              <span className="text-sm font-medium text-primary">New · Voice AI + Proactive Selling</span>
             </div>
 
             {/* Headline */}
@@ -30,7 +30,9 @@ export default function Hero() {
 
             {/* Subtitle */}
             <p className="text-lg text-gray-500 leading-relaxed max-w-lg">
-              Chat360 engages every lead on your website 24/7, in both English and French, so you can focus on closing deals and growing your dealership.
+              Chat360 engages every lead on your website 24/7&mdash;by text or by voice. It speaks
+              first, pitches the right vehicle out loud like your best salesperson, and books the
+              appointment. In both English and French.
             </p>
 
             {/* CTA and Social Proof */}
@@ -156,6 +158,24 @@ export default function Hero() {
                 <div>
                   <p className="text-xs text-gray-500">AI-Driven</p>
                   <p className="text-sm font-semibold text-gray-900">Lead Qualification</p>
+                </div>
+              </div>
+            </div>
+
+            {/* Floating Card - Voice AI */}
+            <div className="absolute -bottom-6 right-2 lg:-right-4 bg-white rounded-xl shadow-lg p-4 border border-gray-100">
+              <div className="flex items-center gap-3">
+                <div className="relative w-10 h-10 flex-shrink-0 flex items-center justify-center">
+                  <span className="voice-pulse absolute inset-0 rounded-full bg-purple-300"></span>
+                  <div className="relative w-10 h-10 rounded-full bg-gradient-to-br from-fuchsia-500 via-purple-500 to-indigo-500 flex items-center justify-center">
+                    <svg className="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 11a7 7 0 01-14 0m7 7v4m0-4a3 3 0 003-3V6a3 3 0 00-6 0v6a3 3 0 003 3z" />
+                    </svg>
+                  </div>
+                </div>
+                <div>
+                  <p className="text-xs text-gray-500">Voice AI</p>
+                  <p className="text-sm font-semibold text-gray-900">Speaks first, out loud</p>
                 </div>
               </div>
             </div>
