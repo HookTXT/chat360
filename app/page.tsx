@@ -15,9 +15,9 @@ export default function Home() {
       <main className="pt-20">
         <Hero />
         <Solution />
-        <Features />
-        <VoiceAI />
         <ProactiveFollowUp />
+        <VoiceAI />
+        <Features />
         <Testimonials />
         <FinalCTA />
       </main>
