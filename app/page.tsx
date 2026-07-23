@@ -3,6 +3,7 @@ import Hero from "@/components/Hero";
 import Solution from "@/components/Solution";
 import Features from "@/components/Features";
 import VoiceAI from "@/components/VoiceAI";
+import ProactiveFollowUp from "@/components/ProactiveFollowUp";
 import Testimonials from "@/components/Testimonials";
 import FinalCTA from "@/components/FinalCTA";
 import Footer from "@/components/Footer";
@@ -16,6 +17,7 @@ export default function Home() {
         <Solution />
         <Features />
         <VoiceAI />
+        <ProactiveFollowUp />
         <Testimonials />
         <FinalCTA />
       </main>

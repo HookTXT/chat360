@@ -420,6 +420,84 @@ export default function Features() {
             </div>
           </div>
 
+          {/* Card 14 - Dark - Dynamic Vehicle Cards - Full Width */}
+          <div className="bg-primary-900 rounded-3xl p-8 relative overflow-hidden md:col-span-2 lg:col-span-3">
+            <div className="flex flex-col md:flex-row md:items-center gap-10">
+              <div className="flex-1">
+                <div className="w-12 h-12 bg-primary-700 rounded-xl flex items-center justify-center text-white mb-6">
+                  <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                  </svg>
+                </div>
+                <h3 className="text-2xl font-bold text-white mb-3">
+                  Dynamic Vehicle Cards.<br />Not Boring Links.
+                </h3>
+                <p className="text-primary-200 mb-6 max-w-md">
+                  Chat360 never sends customers a bare link to click. It shares rich, interactive vehicle
+                  cards right in the conversation—with real photos pulled live from your inventory, a
+                  swipeable image carousel, key details, and a one-tap button to view the vehicle.
+                </p>
+                <div className="flex flex-wrap gap-2">
+                  <span className="bg-white/10 text-white text-xs px-3 py-1 rounded-full border border-white/20">Live inventory photos</span>
+                  <span className="bg-white/10 text-white text-xs px-3 py-1 rounded-full border border-white/20">Swipeable carousel</span>
+                  <span className="bg-white/10 text-white text-xs px-3 py-1 rounded-full border border-white/20">One-tap to VDP</span>
+                </div>
+              </div>
+              {/* Vehicle card mockup (as seen in the live demo) */}
+              <div className="w-full max-w-xs mx-auto md:mx-0">
+                <div className="bg-white rounded-2xl p-3 shadow-xl">
+                  <div className="relative bg-gradient-to-br from-sky-400 to-blue-600 rounded-xl h-40 flex items-center justify-center overflow-hidden">
+                    {/* Car silhouette */}
+                    <svg className="w-28 h-28 text-white/90" fill="currentColor" viewBox="0 0 24 24">
+                      <path d="M18.92 6.01C18.72 5.42 18.16 5 17.5 5h-11c-.66 0-1.21.42-1.42 1.01L3 12v8c0 .55.45 1 1 1h1c.55 0 1-.45 1-1v-1h12v1c0 .55.45 1 1 1h1c.55 0 1-.45 1-1v-8l-2.08-5.99zM6.5 16c-.83 0-1.5-.67-1.5-1.5S5.67 13 6.5 13s1.5.67 1.5 1.5S7.33 16 6.5 16zm11 0c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5zM5 11l1.5-4.5h11L19 11H5z" />
+                    </svg>
+                    {/* Open-in-new badge */}
+                    <div className="absolute top-2 right-2 w-8 h-8 bg-gray-900 rounded-full flex items-center justify-center">
+                      <svg className="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M7 17L17 7M17 7H9m8 0v8" />
+                      </svg>
+                    </div>
+                    {/* Carousel arrows */}
+                    <div className="absolute left-2 top-1/2 -translate-y-1/2 w-8 h-8 bg-white rounded-full shadow flex items-center justify-center">
+                      <svg className="w-4 h-4 text-gray-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
+                      </svg>
+                    </div>
+                    <div className="absolute right-2 top-1/2 -translate-y-1/2 w-8 h-8 bg-white rounded-full shadow flex items-center justify-center">
+                      <svg className="w-4 h-4 text-gray-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                      </svg>
+                    </div>
+                  </div>
+                  <div className="px-1 pt-3 pb-1">
+                    <div className="inline-flex items-center gap-1.5 bg-gray-100 rounded-full px-3 py-1 mb-2">
+                      <svg className="w-3.5 h-3.5 text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9" />
+                      </svg>
+                      <span className="text-xs text-gray-600 font-medium">yourdealership.ca</span>
+                    </div>
+                    <p className="text-base font-bold text-gray-900">2027 Honda HR-V SPORT</p>
+                    <p className="text-xs text-gray-500 mb-3">12 km</p>
+                    <div className="bg-gray-900 text-white text-sm font-medium rounded-xl py-2.5 flex items-center justify-center gap-1.5">
+                      View Vehicle
+                      <svg className="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M7 17L17 7M17 7H9m8 0v8" />
+                      </svg>
+                    </div>
+                    {/* Pagination dots */}
+                    <div className="flex items-center justify-center gap-1.5 mt-3">
+                      <div className="w-1.5 h-1.5 rounded-full bg-gray-300"></div>
+                      <div className="w-1.5 h-1.5 rounded-full bg-gray-300"></div>
+                      <div className="w-5 h-1.5 rounded-full bg-gray-900"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            {/* Background decoration */}
+            <div className="absolute -left-10 -bottom-10 w-64 h-64 bg-primary-800 rounded-full opacity-50"></div>
+          </div>
+
         </div>
 
         {/* Bottom stat bar */}
