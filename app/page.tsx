@@ -1,6 +1,7 @@
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
 import Solution from "@/components/Solution";
+import SmartGreetings from "@/components/SmartGreetings";
 import Features from "@/components/Features";
 import VoiceAI from "@/components/VoiceAI";
 import ProactiveFollowUp from "@/components/ProactiveFollowUp";
@@ -16,6 +17,7 @@ export default function Home() {
         <Hero />
         <Solution />
         <ProactiveFollowUp />
+        <SmartGreetings />
         <VoiceAI />
         <Features />
         <Testimonials />
