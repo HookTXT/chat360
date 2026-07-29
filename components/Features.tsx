@@ -498,6 +498,63 @@ export default function Features() {
             <div className="absolute -left-10 -bottom-10 w-64 h-64 bg-primary-800 rounded-full opacity-50"></div>
           </div>
 
+          {/* Card 15 - Light - Smart Greetings - Full Width */}
+          <div className="bg-gray-50 rounded-3xl p-8 relative overflow-hidden md:col-span-2 lg:col-span-3">
+            <div className="flex flex-col md:flex-row md:items-center gap-10">
+              <div className="flex-1">
+                <div className="w-12 h-12 bg-primary rounded-xl flex items-center justify-center text-white mb-6">
+                  <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M7 8h10M7 12h4m1 8l-4-4H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-3l-4 4z" />
+                  </svg>
+                </div>
+                <h3 className="text-2xl font-bold text-gray-900 mb-3">
+                  Smart Greetings.<br />The Right Opener on Every Page.
+                </h3>
+                <p className="text-gray-600 mb-6 max-w-md">
+                  Your chat reads the page and adapts its approach. On a vehicle listing, it names
+                  the vehicle and offers a test drive. On the service page, it offers an
+                  appointment. To a returning visitor, it says &ldquo;Welcome back.&rdquo; Every
+                  message is continuously tested to keep what converts.
+                </p>
+                <div className="flex flex-wrap gap-2">
+                  <span className="bg-white text-gray-700 text-xs px-3 py-1 rounded-full border border-gray-200">Reads every page</span>
+                  <span className="bg-white text-gray-700 text-xs px-3 py-1 rounded-full border border-gray-200">Remembers visitors</span>
+                  <span className="bg-white text-gray-700 text-xs px-3 py-1 rounded-full border border-gray-200">Continuously tested</span>
+                </div>
+              </div>
+              {/* Contextual greeting mockup (as seen in the live demo) */}
+              <div className="w-full max-w-xs mx-auto md:mx-0">
+                <div className="bg-white rounded-2xl shadow-xl border border-gray-100 overflow-hidden">
+                  <div className="flex items-center gap-2 px-4 py-2.5 bg-gray-50 border-b border-gray-100">
+                    <div className="flex-1 bg-white rounded-full px-3 py-1 text-xs text-gray-500 border border-gray-200 truncate">
+                      yourdealership.ca/2022-jeep-compass
+                    </div>
+                  </div>
+                  <div className="p-4">
+                    <div className="flex items-start gap-2.5">
+                      <div className="w-7 h-7 flex-shrink-0 bg-primary rounded-full flex items-center justify-center text-white text-xs font-bold">
+                        C
+                      </div>
+                      <div>
+                        <p className="text-sm text-gray-700 leading-relaxed">
+                          Like the 2022 Jeep Compass?
+                        </p>
+                        <div className="flex flex-wrap gap-2 mt-2.5">
+                          <span className="bg-primary text-white text-xs px-3 py-1.5 rounded-full font-medium">
+                            Test Drive
+                          </span>
+                          <span className="bg-gray-100 text-gray-600 text-xs px-3 py-1.5 rounded-full font-medium">
+                            Ask a question
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
         </div>
 
         {/* Bottom stat bar */}
