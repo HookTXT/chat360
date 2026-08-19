@@ -5,6 +5,7 @@ import SmartGreetings from "@/components/SmartGreetings";
 import Features from "@/components/Features";
 import VoiceAI from "@/components/VoiceAI";
 import ProactiveFollowUp from "@/components/ProactiveFollowUp";
+import InventoryProviders from "@/components/InventoryProviders";
 import Testimonials from "@/components/Testimonials";
 import FinalCTA from "@/components/FinalCTA";
 import Footer from "@/components/Footer";
@@ -20,6 +21,7 @@ export default function Home() {
         <SmartGreetings />
         <VoiceAI />
         <Features />
+        <InventoryProviders />
         <Testimonials />
         <FinalCTA />
       </main>
