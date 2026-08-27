@@ -4,6 +4,7 @@ const providers = [
   { name: "Power Go", logo: "/logos/power-go.svg" },
   { name: "eDealer", logo: "/logos/edealer.svg" },
   { name: "T-Advantage", logo: "/logos/t-advantage.svg" },
+  { name: "NabThat", logo: "/logos/nabthat.svg" },
 ];
 
 export default function InventoryProviders() {
@@ -21,7 +22,7 @@ export default function InventoryProviders() {
           </p>
         </div>
 
-        <ul className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-4 md:gap-6">
+        <ul className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-4 md:gap-6">
           {providers.map((provider) => (
             <li
               key={provider.name}
