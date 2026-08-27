@@ -14,6 +14,7 @@ aucune modification de code n'est nécessaire.
 | `power-go.svg`       | Power Go     |
 | `edealer.svg`        | eDealer      |
 | `t-advantage.svg`    | T-Advantage  |
+| `nabthat.svg`        | NabThat      |
 
 Format recommandé : SVG (ou PNG transparent 2x), logo horizontal, hauteur d'affichage 40 px.
 Penser à obtenir l'autorisation d'utilisation des marques avant la mise en ligne.
