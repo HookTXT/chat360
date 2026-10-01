@@ -82,7 +82,7 @@ export default function SmartGreetings() {
                 <h3 className="text-lg font-bold text-gray-900">Il relance au bon moment</h3>
                 <p className="text-gray-600 text-sm mt-1">
                   Un visiteur qui lit une fiche véhicule depuis 35 secondes reçoit une invitation
-                  ciblée. Il hésite entre trois Civic? Chat360 propose de les comparer côte à
+                  ciblée. Il hésite entre un RAV4 et un CR-V? Chat360 propose de les comparer côte à
                   côte&mdash;une seule fois, jamais d&apos;insistance.
                 </p>
               </div>
@@ -154,10 +154,10 @@ export default function SmartGreetings() {
               <div className="bg-white rounded-2xl shadow-xl border border-gray-100 overflow-hidden lg:-translate-x-8">
                 <div className="flex items-center gap-2 px-4 py-2.5 bg-gray-50 border-b border-gray-100">
                   <div className="flex-1 bg-white rounded-full px-3 py-1 text-xs text-gray-500 border border-gray-200 truncate">
-                    votreconcession.ca/honda-civic-2023-touring
+                    votreconcession.ca/honda-cr-v-2021-ex-l
                   </div>
                   <span className="text-[10px] text-primary bg-primary-50 border border-primary-100 rounded-full px-2 py-0.5 font-medium whitespace-nowrap">
-                    3e Civic consultée
+                    2e véhicule consulté
                   </span>
                 </div>
                 <div className="p-4">
@@ -167,8 +167,8 @@ export default function SmartGreetings() {
                     </div>
                     <div>
                       <p className="text-sm text-gray-700 leading-relaxed">
-                        Vous hésitez entre plusieurs Civic? Je peux comparer versions, kilométrage et
-                        prix côte à côte.
+                        Vous hésitez entre deux véhicules? Je peux comparer année, version et
+                        kilométrage côte à côte.
                       </p>
                       <div className="flex flex-wrap gap-2 mt-2.5">
                         <span className="bg-primary text-white text-xs px-3 py-1.5 rounded-full font-medium">

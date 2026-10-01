@@ -81,7 +81,7 @@ export default function SmartGreetings() {
                 <h3 className="text-lg font-bold text-gray-900">It re-engages at the right moment</h3>
                 <p className="text-gray-600 text-sm mt-1">
                   A visitor reading a vehicle page for 35 seconds gets a targeted invitation. Someone
-                  bouncing between three Civics? Chat360 offers to compare them side by
+                  going back and forth between a RAV4 and a CR-V? Chat360 offers to compare them side by
                   side&mdash;once, never pushy.
                 </p>
               </div>
@@ -149,14 +149,14 @@ export default function SmartGreetings() {
                 </div>
               </div>
 
-              {/* Hesitation teaser — comparing several of the same model */}
+              {/* Hesitation teaser — comparing two vehicles */}
               <div className="bg-white rounded-2xl shadow-xl border border-gray-100 overflow-hidden lg:-translate-x-8">
                 <div className="flex items-center gap-2 px-4 py-2.5 bg-gray-50 border-b border-gray-100">
                   <div className="flex-1 bg-white rounded-full px-3 py-1 text-xs text-gray-500 border border-gray-200 truncate">
-                    yourdealership.ca/2023-honda-civic-touring
+                    yourdealership.ca/2021-honda-cr-v-ex-l
                   </div>
                   <span className="text-[10px] text-primary bg-primary-50 border border-primary-100 rounded-full px-2 py-0.5 font-medium whitespace-nowrap">
-                    3rd Civic viewed
+                    2nd vehicle viewed
                   </span>
                 </div>
                 <div className="p-4">
@@ -166,7 +166,7 @@ export default function SmartGreetings() {
                     </div>
                     <div>
                       <p className="text-sm text-gray-700 leading-relaxed">
-                        Hesitating between Civics? I can compare trims, mileage and price side by
+                        Torn between two vehicles? I can compare year, trim and mileage side by
                         side.
                       </p>
                       <div className="flex flex-wrap gap-2 mt-2.5">

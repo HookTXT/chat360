@@ -1,6 +1,7 @@
 import Header from "@/components/fr/Header";
 import Hero from "@/components/fr/Hero";
 import Solution from "@/components/fr/Solution";
+import SiteTour from "@/components/fr/SiteTour";
 import SmartGreetings from "@/components/fr/SmartGreetings";
 import Features from "@/components/fr/Features";
 import VoiceAI from "@/components/fr/VoiceAI";
@@ -17,6 +18,7 @@ export default function Home() {
       <main className="pt-20">
         <Hero />
         <Solution />
+        <SiteTour />
         <ProactiveFollowUp />
         <SmartGreetings />
         <VoiceAI />
