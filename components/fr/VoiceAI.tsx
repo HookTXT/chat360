@@ -67,10 +67,10 @@ export default function VoiceAI() {
                   </svg>
                 </div>
                 <div>
-                  <h3 className="text-lg font-bold text-gray-900">Bilingue, accent d&apos;ici</h3>
+                  <h3 className="text-lg font-bold text-gray-900">Bilingue, dans la langue du client</h3>
                   <p className="text-gray-600 text-sm mt-1">
-                    Français sur vos pages FR, anglais sur vos pages EN &mdash; automatiquement. Vos
-                    clients se font répondre dans leur langue, naturellement.
+                    Le client choisit le français ou l&apos;anglais, et l&apos;IA s&apos;y tient pour toute
+                    la conversation. Vos clients se font répondre dans leur langue, naturellement.
                   </p>
                 </div>
               </div>
@@ -166,7 +166,7 @@ export default function VoiceAI() {
         </div>
 
         {/* Secondary feature grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mt-16">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-16">
           {/* Instant response */}
           <div className="bg-white rounded-3xl p-6 border border-gray-100 shadow-sm">
             <div className="w-11 h-11 bg-primary-50 rounded-xl flex items-center justify-center text-primary mb-4">
@@ -188,10 +188,10 @@ export default function VoiceAI() {
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z" />
               </svg>
             </div>
-            <h3 className="font-bold text-gray-900 mb-1">Interrompez-le, comme un humain</h3>
+            <h3 className="font-bold text-gray-900 mb-1">Interrompez-le, ou dites «&nbsp;stop&nbsp;»</h3>
             <p className="text-gray-600 text-sm">
               Le client peut couper la parole simplement en parlant &mdash; l&apos;IA s&apos;arrête et
-              écoute, avec filtre anti-écho intelligent. Une conversation, pas un monologue.
+              écoute, avec filtre anti-écho intelligent. Un simple «&nbsp;stop&nbsp;» et il se tait.
             </p>
           </div>
 
@@ -204,22 +204,50 @@ export default function VoiceAI() {
             </div>
             <h3 className="font-bold text-gray-900 mb-1">La voix + l&apos;écran</h3>
             <p className="text-gray-600 text-sm">
-              Pendant que l&apos;IA parle, les fiches véhicules, liens et photos s&apos;affichent à
-              l&apos;écran &mdash; cliquables. Le client entend <em>et</em> voit.
+              Pendant que l&apos;IA parle, votre site ouvre la fiche du véhicule ou l&apos;inventaire
+              filtré, et encadre le bloc dont elle parle. Le client entend <em>et</em> voit.
             </p>
           </div>
 
-          {/* Dashboard */}
+          {/* Relais humain */}
+          <div className="bg-white rounded-3xl p-6 border border-gray-100 shadow-sm">
+            <div className="w-11 h-11 bg-primary-50 rounded-xl flex items-center justify-center text-primary mb-4">
+              <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0z" />
+              </svg>
+            </div>
+            <h3 className="font-bold text-gray-900 mb-1">Un conseiller prend le relais? Il l&apos;entend.</h3>
+            <p className="text-gray-600 text-sm">
+              Quand un humain reprend la conversation, ses réponses sont lues à voix haute. Le
+              client n&apos;a pas à passer au clavier.
+            </p>
+          </div>
+
+          {/* Courriel ou numéro dicté */}
+          <div className="bg-white rounded-3xl p-6 border border-gray-100 shadow-sm">
+            <div className="w-11 h-11 bg-primary-50 rounded-xl flex items-center justify-center text-primary mb-4">
+              <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+              </svg>
+            </div>
+            <h3 className="font-bold text-gray-900 mb-1">Courriel et numéro dictés, sans erreur</h3>
+            <p className="text-gray-600 text-sm">
+              «&nbsp;kevin arobase&hellip;&nbsp;» : l&apos;IA comprend le courriel ou le numéro dicté
+              et l&apos;affiche à l&apos;écran pour que le client vérifie.
+            </p>
+          </div>
+
+          {/* SM360 leads + dashboard */}
           <div className="bg-white rounded-3xl p-6 border border-gray-100 shadow-sm">
             <div className="w-11 h-11 bg-primary-50 rounded-xl flex items-center justify-center text-primary mb-4">
               <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
               </svg>
             </div>
-            <h3 className="font-bold text-gray-900 mb-1">Tout dans votre tableau de bord</h3>
+            <h3 className="font-bold text-gray-900 mb-1">Leads «&nbsp;Chat360 Voix&nbsp;» dans SM360</h3>
             <p className="text-gray-600 text-sm">
-              Chaque conversation vocale est transcrite, sauvegardée et identifiée «&nbsp;Chat
-              vocal&nbsp;» &mdash; filtrable et avec scoring de lead, comme vos chats texte.
+              Les leads du mode vocal arrivent dans SM360 identifiés «&nbsp;Chat360 Voix&nbsp;». Chaque
+              conversation est aussi transcrite et sauvegardée dans votre tableau de bord.
             </p>
           </div>
         </div>

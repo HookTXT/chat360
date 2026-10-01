@@ -67,10 +67,10 @@ export default function VoiceAI() {
                   </svg>
                 </div>
                 <div>
-                  <h3 className="text-lg font-bold text-gray-900">Bilingual, local accent</h3>
+                  <h3 className="text-lg font-bold text-gray-900">Bilingual, in the customer&apos;s language</h3>
                   <p className="text-gray-600 text-sm mt-1">
-                    French on your French pages, English on your English pages &mdash; automatically.
-                    Your customers get answers in their own language, naturally.
+                    The customer picks English or French, and the AI sticks to it for the whole
+                    conversation. Your customers get answers in their own language, naturally.
                   </p>
                 </div>
               </div>
@@ -166,7 +166,7 @@ export default function VoiceAI() {
         </div>
 
         {/* Secondary feature grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mt-16">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-16">
           {/* Instant response */}
           <div className="bg-white rounded-3xl p-6 border border-gray-100 shadow-sm">
             <div className="w-11 h-11 bg-primary-50 rounded-xl flex items-center justify-center text-primary mb-4">
@@ -188,10 +188,10 @@ export default function VoiceAI() {
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z" />
               </svg>
             </div>
-            <h3 className="font-bold text-gray-900 mb-1">Interrupt it, like a human</h3>
+            <h3 className="font-bold text-gray-900 mb-1">Interrupt it, or just say &ldquo;stop&rdquo;</h3>
             <p className="text-gray-600 text-sm">
               The customer can cut in just by speaking &mdash; the AI stops and listens, with smart
-              echo cancellation. A conversation, not a monologue.
+              echo cancellation. A simple &ldquo;stop&rdquo; and it goes quiet.
             </p>
           </div>
 
@@ -204,22 +204,50 @@ export default function VoiceAI() {
             </div>
             <h3 className="font-bold text-gray-900 mb-1">Voice + the screen</h3>
             <p className="text-gray-600 text-sm">
-              While the AI speaks, vehicle cards, links and photos appear on screen &mdash; clickable.
-              The customer hears <em>and</em> sees.
+              While the AI speaks, your website opens the vehicle page or the filtered inventory and
+              highlights what it&apos;s talking about. The customer hears <em>and</em> sees.
             </p>
           </div>
 
-          {/* Dashboard */}
+          {/* Human handoff */}
+          <div className="bg-white rounded-3xl p-6 border border-gray-100 shadow-sm">
+            <div className="w-11 h-11 bg-primary-50 rounded-xl flex items-center justify-center text-primary mb-4">
+              <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0z" />
+              </svg>
+            </div>
+            <h3 className="font-bold text-gray-900 mb-1">A rep takes over? It reads them aloud.</h3>
+            <p className="text-gray-600 text-sm">
+              When a human steps into the conversation, their replies are read out loud. The
+              customer never has to switch to the keyboard.
+            </p>
+          </div>
+
+          {/* Dictated email or phone */}
+          <div className="bg-white rounded-3xl p-6 border border-gray-100 shadow-sm">
+            <div className="w-11 h-11 bg-primary-50 rounded-xl flex items-center justify-center text-primary mb-4">
+              <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+              </svg>
+            </div>
+            <h3 className="font-bold text-gray-900 mb-1">Dictated emails and numbers, done right</h3>
+            <p className="text-gray-600 text-sm">
+              &ldquo;kevin at&hellip;&rdquo; &mdash; the AI understands a dictated email or phone
+              number and shows it on screen so the customer can double-check.
+            </p>
+          </div>
+
+          {/* SM360 leads + dashboard */}
           <div className="bg-white rounded-3xl p-6 border border-gray-100 shadow-sm">
             <div className="w-11 h-11 bg-primary-50 rounded-xl flex items-center justify-center text-primary mb-4">
               <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
               </svg>
             </div>
-            <h3 className="font-bold text-gray-900 mb-1">All in your dashboard</h3>
+            <h3 className="font-bold text-gray-900 mb-1">&ldquo;Chat360 Voice&rdquo; leads in SM360</h3>
             <p className="text-gray-600 text-sm">
-              Every voice conversation is transcribed, saved and tagged &ldquo;Voice chat&rdquo; &mdash;
-              filterable and lead-scored, just like your text chats.
+              Voice leads land in SM360 tagged &ldquo;Chat360 Voix&rdquo;. Every conversation is also
+              transcribed and saved in your dashboard.
             </p>
           </div>
         </div>
