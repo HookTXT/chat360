@@ -1,4 +1,4 @@
-# Media stays local; text notes (topic, script, plan, captions, cost) are committed.
+# Media stays local; text notes (topic, script, plan, captions, cost, QA reports) are committed.
 shorts/**/*.mp4
 shorts/**/*.mov
 shorts/**/*.wav
@@ -7,7 +7,8 @@ shorts/**/*.png
 shorts/**/*.jpg
 shorts/**/voice/
 shorts/**/build/
-shorts/**/qa/
+# QA reports (*.md) are committed; contact sheets (*.png) and frames stay local.
+shorts/**/qa/**/frames/
 
 # Render studio: dependencies, generated audio, scratch renders.
 studio/node_modules/
