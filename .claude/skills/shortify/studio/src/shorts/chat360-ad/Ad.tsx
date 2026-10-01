@@ -245,15 +245,15 @@ const Answer: React.FC<{ c: Copy }> = ({ c }) => {
     {
       key: "card",
       at: b.card,
-      height: 386,
+      height: 380,
       render: (p) => <VehicleCard title={c.answer.cardTitle} meta={c.answer.cardMeta} cta={c.answer.cardCta} p={p} press={press} />,
     },
-    { key: "booked", at: b.booked, height: 130, render: (p) => <Booked title={c.answer.bookedTitle} sub={c.answer.bookedSub} p={p} /> },
+    { key: "booked", at: b.booked, height: 124, render: (p) => <Booked title={c.answer.bookedTitle} sub={c.answer.bookedSub} p={p} /> },
   ];
   const push = interpolate(f, [b.booked, 180], [1, 1.02], clamp);
   // The widget grows with the conversation instead of sitting as an empty white box.
   const GAP = 22;
-  const PAD = 26;
+  const PAD = 22; // FR's 3-line reply must still fit once the visitor's message scrolls away
   const maxView = PANEL.height - PANEL.header;
   const content = items.reduce((h, it) => h + (it.height + GAP) * enter(f, it.at, 10, easeInOut), 2 * PAD - GAP);
   const panelH = PANEL.header + Math.min(maxView, Math.max(content, 140));
