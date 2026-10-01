@@ -26,7 +26,7 @@
         "of complex questions get",
         "an answer within 24 hours"
       ],
-      "source": "Pied Piper PSI, Internet Lead Effectiveness study, Feb. 2026 · 3,290 U.S. dealer websites"
+      "source": "Pied Piper PSI, Internet Lead Effectiveness study, Feb. 2026 · 3,290 U.S. dealer websites"
     },
     "answer": {
       "user": [
@@ -91,15 +91,15 @@
       ],
       "listening": "Listening…",
       "transcript": [
-        "Perfect — two Civics in stock",
+        "Yes — two Civics in stock",
         "right now."
       ],
       "fr": [
-        "Check le prix su’l Civic?"
+        "La Civic, est-tu encore dispo?"
       ],
       "frTag": "FR",
       "en": [
-        "What’s the price on the Civic?"
+        "Is the Civic still available?"
       ],
       "enTag": "EN",
       "speaking": "Speaking…",
@@ -107,10 +107,10 @@
         "Do you have the Civic in stock?"
       ],
       "frBot": [
-        "Bien sûr! Voici la Civic."
+        "Oui! Je t’ouvre sa fiche."
       ],
       "enBot": [
-        "Sure! Here’s the Civic."
+        "Yes! Opening its page now."
       ]
     },
     "proof": {
@@ -128,7 +128,7 @@
       "word": "DEMO",
       "placeholder": "Add a comment…",
       "dmFrom": "Chat360",
-      "dmText": "Here’s your demo.",
+      "dmText": "Pick a time for your demo.",
       "dmButton": "Book my demo"
     }
   },
@@ -161,7 +161,7 @@
         "obtiennent une réponse",
         "en 24 heures"
       ],
-      "source": "Pied Piper PSI, étude Internet Lead Effectiveness, févr. 2026 · 3 290 sites de concessionnaires (É.-U.)"
+      "source": "Pied Piper PSI, étude Internet Lead Effectiveness, févr. 2026 · 3 290 sites de concessionnaires (É.-U.)"
     },
     "answer": {
       "user": [
@@ -227,15 +227,15 @@
       ],
       "listening": "J’écoute…",
       "transcript": [
-        "Parfait, on a deux Civic",
+        "Oui, on a deux Civic",
         "en stock en ce moment."
       ],
       "fr": [
-        "Check le prix su’l Civic?"
+        "La Civic, est-tu encore dispo?"
       ],
       "frTag": "FR",
       "en": [
-        "What’s the price on the Civic?"
+        "Is the Civic still available?"
       ],
       "enTag": "EN",
       "speaking": "Je réponds…",
@@ -243,10 +243,10 @@
         "Avez-vous la Civic en stock?"
       ],
       "frBot": [
-        "Bien sûr! Voici la Civic."
+        "Oui! Je t’ouvre sa fiche."
       ],
       "enBot": [
-        "Sure! Here’s the Civic."
+        "Yes! Opening its page now."
       ]
     },
     "proof": {
@@ -264,7 +264,7 @@
       "word": "DÉMO",
       "placeholder": "Ajouter un commentaire…",
       "dmFrom": "Chat360",
-      "dmText": "Voici ta démo.",
+      "dmText": "Choisis l’heure de ta démo.",
       "dmButton": "Réserver ma démo"
     }
   }

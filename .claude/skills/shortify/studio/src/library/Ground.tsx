@@ -26,7 +26,7 @@ export const Ground: React.FC<{ tone: Tone; glowX?: number; glowY?: number; glow
       {/* Fine static grain (pre-made texture, <Img> so the render waits for it): dithers the gradient against banding. */}
       <Img
         src={staticFile("textures/grain.jpg")}
-        style={{ position: "absolute", inset: 0, width: "100%", height: "100%", mixBlendMode: "overlay", opacity: tone === "dark" ? 0.09 : 0.05 }}
+        style={{ position: "absolute", inset: 0, width: "100%", height: "100%", opacity: tone === "dark" ? 0.045 : 0.03 }}
       />
     </AbsoluteFill>
   );

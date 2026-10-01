@@ -1,6 +1,6 @@
 import React from "react";
 import { C, FONT } from "../style/tokens";
-import { CarPhoto, type Paint } from "./CarArt";
+import { CarPhoto, type Body, type Paint } from "./CarArt";
 import { BubbleMark } from "./Logo";
 import { Icon, type IconName } from "./icons";
 import { easeInOut, enter, popIn } from "./motion";
@@ -119,27 +119,38 @@ export const Thread: React.FC<{
   );
 };
 
-/** Words of `lines` revealed up to fraction `reveal` (0..1); layout never shifts. */
+/**
+ * Words of `lines` revealed up to fraction `reveal` (0..1). The bubble grows a line
+ * at a time with the text (no big empty box), and words never reflow.
+ */
 const Words: React.FC<{ lines: string[]; reveal: number }> = ({ lines, reveal }) => {
-  const total = lines.reduce((n, l) => n + l.split(" ").length, 0);
+  const counts = lines.map((l) => l.split(" ").length);
+  const total = counts.reduce((a, b) => a + b, 0);
   const shown = reveal * total;
+  let lastLine = 0;
+  for (let i = 0, acc = 0; i < lines.length; i++) {
+    if (shown > acc) lastLine = i;
+    acc += counts[i];
+  }
   let idx = 0;
   return (
     <>
-      {lines.map((line, li) => (
-        <div key={li} style={{ whiteSpace: "nowrap" }}>
-          {line.split(" ").map((w, wi) => {
-            const o = Math.max(0, Math.min(1, shown - idx));
-            idx += 1;
-            return (
-              <span key={wi} style={{ opacity: o }}>
+      {lines.map((line, li) => {
+        const words = line.split(" ");
+        const start = idx;
+        idx += words.length;
+        if (li > lastLine) return null;
+        return (
+          <div key={li} style={{ whiteSpace: "nowrap" }}>
+            {words.map((w, wi) => (
+              <span key={wi} style={{ opacity: Math.max(0, Math.min(1, shown - (start + wi))) }}>
                 {w}
-                {wi < line.split(" ").length - 1 ? " " : ""}
+                {wi < words.length - 1 ? " " : ""}
               </span>
-            );
-          })}
-        </div>
-      ))}
+            ))}
+          </div>
+        );
+      })}
     </>
   );
 };
@@ -277,13 +288,18 @@ export const Tag: React.FC<{ n?: number; icon?: IconName; text: string; p: numbe
 );
 
 /** Vehicle image: studio-backdrop illustration in place of a listing photo (we have no real photos). */
-export const CarTile: React.FC<{ width: number | string; height: number; iconSize?: number; hue?: "blue" | "slate" | "teal"; paint?: Paint; night?: boolean }> = ({
-  width,
-  height,
-  hue = "blue",
-  paint,
-  night,
-}) => <CarPhoto width={width} height={height} paint={paint ?? (hue === "slate" ? "silver" : hue)} night={night} />;
+export const CarTile: React.FC<{
+  width: number | string;
+  height: number;
+  iconSize?: number;
+  hue?: "blue" | "slate" | "teal";
+  paint?: Paint;
+  body?: Body;
+  roof?: string;
+  night?: boolean;
+}> = ({ width, height, hue = "blue", paint, body, roof, night }) => (
+  <CarPhoto width={width} height={height} paint={paint ?? (hue === "slate" ? "silver" : hue)} body={body} roof={roof} night={night} />
+);
 
 export const VehicleCard: React.FC<{
   title: string;
@@ -292,7 +308,8 @@ export const VehicleCard: React.FC<{
   p: number;
   press?: number; // 0..1 button press
   paint?: Paint;
-}> = ({ title, meta, cta, p, press = 0, paint = "blue" }) => {
+  roof?: string;
+}> = ({ title, meta, cta, p, press = 0, paint = "blue", roof }) => {
   const down = Math.sin(Math.min(1, press) * Math.PI);
   return (
     <div
@@ -309,7 +326,7 @@ export const VehicleCard: React.FC<{
         transformOrigin: "0% 0%",
       }}
     >
-      <CarTile width="100%" height={150} paint={paint} />
+      <CarTile width="100%" height={150} paint={paint} roof={roof} />
       <div style={{ fontSize: 36, fontWeight: 800, color: C.text, marginTop: 14, letterSpacing: -0.5 }}>{title}</div>
       <div style={{ fontSize: 28, fontWeight: 600, color: C.textMuted, marginTop: 2 }}>{meta}</div>
       <div

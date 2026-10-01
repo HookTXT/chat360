@@ -70,7 +70,7 @@ const NightPage: React.FC<{ c: Copy }> = ({ c }) => (
       </div>
     </div>
     <div style={{ padding: 26 }}>
-      <CarPhoto width="100%" height={420} paint="blue" night />
+      <CarPhoto width="100%" height={420} paint="blue" roof="#111827" night />
     </div>
   </div>
 );
@@ -246,7 +246,7 @@ const Answer: React.FC<{ c: Copy }> = ({ c }) => {
       key: "card",
       at: b.card,
       height: 380,
-      render: (p) => <VehicleCard title={c.answer.cardTitle} meta={c.answer.cardMeta} cta={c.answer.cardCta} p={p} press={press} />,
+      render: (p) => <VehicleCard title={c.answer.cardTitle} meta={c.answer.cardMeta} cta={c.answer.cardCta} p={p} press={press} roof="#111827" />,
     },
     { key: "booked", at: b.booked, height: 124, render: (p) => <Booked title={c.answer.bookedTitle} sub={c.answer.bookedSub} p={p} /> },
   ];
@@ -269,7 +269,7 @@ const Answer: React.FC<{ c: Copy }> = ({ c }) => {
           width={COL.width}
           steps={[
             { text: c.answer.tag1, at: b.step1 },
-            { text: c.answer.tag2, at: b.step2 },
+            { text: c.answer.tag2, at: b.step2, doneAt: b.step2Done },
           ]}
         />
       </div>
@@ -383,7 +383,7 @@ const Twist: React.FC<{ c: Copy }> = ({ c }) => {
                     meta={meta}
                     p={enter(f, b.rows[i], 6)}
                     highlight={i === 0 ? enter(f, b.pick, 8) : 0}
-                    hue={(["blue", "slate", "teal"] as const)[i]}
+                    paint={(["blue", "silver", "red"] as const)[i]}
                   />
                 ))}
               </div>
@@ -402,7 +402,7 @@ const VIS_TOP = 760;
 /** Visual for one list item: hard cut out on the next item's beat, quick ease in. */
 const Swap: React.FC<{ f: number; inAt: number; outAt?: number; children: React.ReactNode }> = ({ f, inAt, outAt, children }) => {
   if (f < inAt || (outAt !== undefined && f >= outAt)) return null;
-  const pin = enter(f, inAt, 8);
+  const pin = enter(f, inAt - 3, 8);
   return (
     <div style={{ position: "absolute", left: COL.left, top: VIS_TOP, width: COL.width, opacity: pin, transform: `translateY(${(1 - pin) * 60}px)` }}>
       {children}
@@ -455,19 +455,19 @@ const List: React.FC<{ c: Copy }> = ({ c }) => {
         {/* The subject for the three rows below: "Chat360… speaks first." */}
         <div style={{ fontSize: 52, fontWeight: 900, color: C.mintDeep, letterSpacing: -1, ...fadeUp(enter(f, b.header, 6), 14) }}>{c.list.header}</div>
         <ListRow size={68} icon="comment" text={c.list.row1} p={enter(f, b.row1)} active={active === 0} tone="paper" />
-        <ListRow size={68} icon="speaker" text={c.list.row2} p={enter(f, b.row2)} active={active === 1} tone="paper" />
+        <ListRow size={68} icon="speaker" text={c.list.row2} p={enter(f, b.row2 - 3)} active={active === 1} tone="paper" />
         <div>
-          <div style={{ fontSize: 44, fontWeight: 900, color: C.mintDeep, letterSpacing: -0.6, height: 56, ...fadeUp(enter(f, b.kicker), 14) }}>
+          <div style={{ fontSize: 56, fontWeight: 900, color: C.mintDeep, letterSpacing: -1, height: 70, ...fadeUp(enter(f, b.kicker), 14) }}>
             {c.list.kicker}
           </div>
-          <ListRow size={68} icon="star" best text={c.list.row3} p={enter(f, b.row3)} active={active === 2} tone="paper" />
+          <ListRow size={68} icon="star" best text={c.list.row3} p={enter(f, b.row3 - 3)} active={active === 2} tone="paper" />
         </div>
       </div>
 
       <Swap f={f} inAt={b.row1} outAt={b.row2}>
         <BrowserFrame width={COL.width} height={380} url={c.list.greetUrl} typedChars={c.list.greetUrl.length} urlSize={23}>
           <div style={{ padding: 22 }}>
-            <CarPhoto width="100%" height={240} paint="teal" />
+            <CarPhoto width="100%" height={240} paint="teal" body="sedan" />
           </div>
         </BrowserFrame>
         <div style={{ marginTop: 22 }}>

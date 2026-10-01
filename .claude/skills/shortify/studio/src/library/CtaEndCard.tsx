@@ -105,9 +105,9 @@ export const CtaEndCard: React.FC<{
             marginTop: 34,
             width: 760,
             display: "flex",
-            alignItems: "center",
+            alignItems: "flex-start",
             gap: 20,
-            padding: "20px 22px",
+            padding: "22px 26px",
             borderRadius: 34,
             background: "#1A2A27",
             border: "2px solid rgba(42,211,163,0.55)",
@@ -129,22 +129,23 @@ export const CtaEndCard: React.FC<{
           >
             <BubbleMark size={46} style={{ marginTop: 4 }} />
           </div>
-          <div style={{ flex: 1 }}>
+          <div style={{ flex: 1, display: "flex", flexDirection: "column", alignItems: "flex-start", gap: 6 }}>
             <div style={{ fontSize: 28, fontWeight: 800, color: C.whiteMuted }}>{dm.from}</div>
-            <div style={{ fontSize: 38, fontWeight: 800, color: C.white, letterSpacing: -0.5 }}>{dm.text}</div>
-          </div>
-          <div
-            style={{
-              padding: "16px 24px",
-              borderRadius: 999,
-              background: C.mint,
-              color: C.ink,
-              fontSize: 28,
-              fontWeight: 900,
-              whiteSpace: "nowrap",
-            }}
-          >
-            {dm.button}
+            <div style={{ fontSize: 36, fontWeight: 800, color: C.white, letterSpacing: -0.5 }}>{dm.text}</div>
+            <div
+              style={{
+                marginTop: 8,
+                padding: "14px 26px",
+                borderRadius: 999,
+                background: C.mint,
+                color: C.ink,
+                fontSize: 28,
+                fontWeight: 900,
+                whiteSpace: "nowrap",
+              }}
+            >
+              {dm.button}
+            </div>
           </div>
         </div>
       ) : null}

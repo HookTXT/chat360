@@ -1,5 +1,6 @@
 import React from "react";
 import { C, FONT } from "../style/tokens";
+import type { Paint } from "./CarArt";
 import { CarTile } from "./Chat";
 import { Icon } from "./icons";
 import { popIn, slideIn } from "./motion";
@@ -87,12 +88,13 @@ export const FilterChip: React.FC<{ text: string; p: number }> = ({ text, p }) =
   </div>
 );
 
-export const ResultRow: React.FC<{ title: string; meta: string; p: number; highlight?: number; hue?: "blue" | "slate" | "teal" }> = ({
+export const ResultRow: React.FC<{ title: string; meta: string; p: number; highlight?: number; hue?: "blue" | "slate" | "teal"; paint?: Paint }> = ({
   title,
   meta,
   p,
   highlight = 0,
   hue = "blue",
+  paint,
 }) => (
   <div
     style={{
@@ -107,7 +109,7 @@ export const ResultRow: React.FC<{ title: string; meta: string; p: number; highl
       ...slideIn(p, 0, 50),
     }}
   >
-    <CarTile width={150} height={100} iconSize={64} hue={hue} />
+    <CarTile width={150} height={100} iconSize={64} hue={hue} paint={paint} />
     <div>
       <div style={{ fontSize: 36, fontWeight: 800, color: C.text, letterSpacing: -0.4 }}>{title}</div>
       <div style={{ fontSize: 28, fontWeight: 600, color: C.textMuted, marginTop: 4 }}>{meta}</div>

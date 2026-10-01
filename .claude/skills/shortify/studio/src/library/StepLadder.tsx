@@ -6,7 +6,7 @@ import { enter, fadeUp } from "./motion";
 /** G3 — Step ladder. Numbered steps joined by a rail; each lights on its beat, done steps get a check. */
 export const StepLadder: React.FC<{
   frame: number;
-  steps: { text: string; at: number }[];
+  steps: { text: string; at: number; doneAt?: number }[];
   tone: Tone;
   width?: number;
   size?: number; // text px; circle scales with it
@@ -18,7 +18,7 @@ export const StepLadder: React.FC<{
       {steps.map((s, i) => {
         const p = enter(frame, s.at);
         const next = steps[i + 1];
-        const done = next ? enter(frame, next.at) : 0;
+        const done = next ? enter(frame, next.at) : s.doneAt !== undefined ? enter(frame, s.doneAt) : 0;
         return (
           <div key={s.text} style={{ display: "flex", alignItems: "center", gap: 28, ...fadeUp(p, 24) }}>
             <div
@@ -38,7 +38,16 @@ export const StepLadder: React.FC<{
             >
               {done > 0.5 ? <Icon name="check" size={Math.round(size * 0.78)} color={tone === "dark" ? "#0B1716" : "#FFFFFF"} stroke={3} /> : i + 1}
             </div>
-            <div style={{ fontSize: size, fontWeight: 900, color: t.text, letterSpacing: -size * 0.024, opacity: 1 - 0.45 * done, whiteSpace: "nowrap" }}>
+            <div
+              style={{
+                fontSize: size,
+                fontWeight: 900,
+                color: t.text,
+                letterSpacing: -size * 0.024,
+                opacity: next ? 1 - 0.45 * done : 1,
+                whiteSpace: "nowrap",
+              }}
+            >
               {s.text}
             </div>
           </div>

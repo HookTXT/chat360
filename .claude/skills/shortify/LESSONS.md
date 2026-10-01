@@ -28,3 +28,7 @@ Seeded from the Shortify guide; append our own as they happen (date, short, what
 - The scene's claims go big, outside the widget (step ladder ≥ 54 px). Pills inside a mock read at about 11 pt on a phone.
 - A logo that glides must finish before the next element enters its path.
 - The hook's typing dots get a neutral avatar. The brand avatar there makes the next "typical chat" shot read as if Chat360 were the slow one.
+- Dealers see body styles at a glance: an SUV search must return SUVs. `CarArt` has `suv` and `sedan` bodies (plus a roof colour), so match them to the model named on screen.
+- A bot shown dodging the question it was asked (a price question answered with "here it is") reads as the chatbot dealers distrust. Ask something the mock can honestly answer instead of inventing a price.
+- In-scene swaps need the same early entrance as cuts, or the swap frame blinks empty.
+- Grain: overlay blend does nothing on near-black, and a per-frame SVG feTurbulence doubled render time. Use a pre-made 2 px noise JPEG through `<Img>` (so the render waits for it), normal blend at 3–5 %. It survives H.264 at CRF 16.
