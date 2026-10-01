@@ -34,11 +34,11 @@
       ],
       "tag1": "Answers right away, 24/7",
       "bot": [
-        "It’s AWD with only 12 km.",
+        "It’s AWD with only 12 km.",
         "Want a test drive?"
       ],
       "cardTitle": "2027 Honda HR-V SPORT",
-      "cardMeta": "12 km · AWD · Black roof",
+      "cardMeta": "12 km · AWD · Black roof",
       "cardCta": "Book a test drive",
       "tag2": "Books the test drive",
       "bookedTitle": "Test drive booked",
@@ -60,15 +60,15 @@
       "rows": [
         [
           "2021 Honda CR-V",
-          "62,000 km"
+          "$28,495 · 62,000 km"
         ],
         [
           "2020 Toyota RAV4",
-          "71,500 km"
+          "$27,995 · 71,500 km"
         ],
         [
           "2021 Mazda CX-5",
-          "48,200 km"
+          "$26,995 · 48,200 km"
         ]
       ],
       "urlBase": "yourdealership.ca/inventory",
@@ -95,7 +95,7 @@
         "right now."
       ],
       "fr": [
-        "La Civic, est-tu encore dispo?"
+        "La Civic est-tu encore dispo?"
       ],
       "frTag": "FR",
       "en": [
@@ -136,7 +136,7 @@
     "locale": "fr-CA",
     "hook": {
       "closed": "Fermé",
-      "pageUrl": "votreconcession.ca/2027-honda-hr-v-sport",
+      "pageUrl": "votreconcession.ca/honda-hr-v-sport-2027",
       "lines": [
         "Vite, l’IA,",
         "vends-moi",
@@ -155,13 +155,13 @@
       ],
       "lead": "Seulement",
       "value": 51,
-      "suffix": " %",
+      "suffix": " %",
       "label": [
         "des questions complexes",
         "obtiennent une réponse",
         "en 24 heures"
       ],
-      "source": "Pied Piper PSI, étude Internet Lead Effectiveness, févr. 2026 · 3 290 sites de concessionnaires (É.-U.)"
+      "source": "Pied Piper PSI, étude Internet Lead Effectiveness, févr. 2026 · 3 290 sites de concessionnaires (É.-U.)"
     },
     "answer": {
       "user": [
@@ -170,11 +170,11 @@
       "tag1": "Répond tout de suite, 24/7",
       "bot": [
         "Traction intégrale,",
-        "seulement 12 km.",
+        "seulement 12 km.",
         "Je te réserve un essai?"
       ],
       "cardTitle": "Honda HR-V SPORT 2027",
-      "cardMeta": "12 km · Intégrale · Toit noir",
+      "cardMeta": "12 km · Intégrale · Toit noir",
       "cardCta": "Réserver un essai routier",
       "tag2": "Réserve l’essai routier",
       "bookedTitle": "Essai routier réservé",
@@ -186,40 +186,40 @@
       "h2a": "Chat360 ",
       "h2b": "fait la recherche.",
       "query": [
-        "Un VUS usagé sous 30 000 $"
+        "Un VUS usagé sous 30 000 $"
       ],
       "chips": [
         "Usagé",
         "VUS",
-        "Moins de 30 000 $"
+        "Moins de 30 000 $"
       ],
       "rows": [
         [
           "Honda CR-V 2021",
-          "62 000 km"
+          "28 495 $ · 62 000 km"
         ],
         [
           "Toyota RAV4 2020",
-          "71 500 km"
+          "27 995 $ · 71 500 km"
         ],
         [
           "Mazda CX-5 2021",
-          "48 200 km"
+          "26 995 $ · 48 200 km"
         ]
       ],
       "urlBase": "votreconcession.ca/inventaire",
-      "urlSearch": "/vus-usages-moins-30k"
+      "urlSearch": "/vus-usages-30k"
     },
     "list": {
       "header": "Chat360…",
       "row1": "parle en premier.",
       "row2": "répond de vive voix.",
-      "kicker": "Mais le meilleur :",
+      "kicker": "Et surtout…",
       "row3": "est vraiment bilingue.",
       "greetUrl": "votreconcession.ca/honda-civic-2022",
       "greet": [
-        "Des questions sur la",
-        "Honda Civic 2022?"
+        "Des questions sur",
+        "la Honda Civic 2022?"
       ],
       "replies": [
         "Essai routier",
@@ -231,7 +231,7 @@
         "en stock en ce moment."
       ],
       "fr": [
-        "La Civic, est-tu encore dispo?"
+        "La Civic est-tu encore dispo?"
       ],
       "frTag": "FR",
       "en": [
@@ -251,10 +251,10 @@
     },
     "proof": {
       "value": 41,
-      "suffix": " %",
+      "suffix": " %",
       "label": [
-        "des conversations sont",
-        "devenues des prospects"
+        "des conversations ont",
+        "généré un prospect"
       ],
       "source": "Données Chat360 · septembre 2026"
     },

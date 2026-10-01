@@ -29,6 +29,7 @@ One accent per frame. No gradients across the whole frame; a soft radial glow be
 
 - Inter (OFL, shipped in `studio/public/fonts`) — the closest open match to the site's system stack. Heavy (800–900) for titles and numbers; 600 for labels.
 - Only glyphs in Inter's latin subset: no `≤`, `✓` or emoji — use words ("Under $30,000") or SVG icons.
+- French spacing uses the no-break space U+00A0 (« 51 % », « 30 000 $ », « 12 km », before « : »). The narrow U+202F is not in Inter's latin subset and renders from a fallback font.
 - Title at frame 0: 3–8 words, leads with what the viewer gets, poses the question the short answers. It becomes the cover.
 - Minimum on-canvas size (1080×1920): body labels 56 px, numbers 220 px+.
 

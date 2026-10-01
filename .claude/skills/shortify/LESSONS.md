@@ -32,3 +32,7 @@ Seeded from the Shortify guide; append our own as they happen (date, short, what
 - A bot shown dodging the question it was asked (a price question answered with "here it is") reads as the chatbot dealers distrust. Ask something the mock can honestly answer instead of inventing a price.
 - In-scene swaps need the same early entrance as cuts, or the swap frame blinks empty.
 - Grain: overlay blend does nothing on near-black, and a per-frame SVG feTurbulence doubled render time. Use a pre-made 2 px noise JPEG through `<Img>` (so the render waits for it), normal blend at 3–5 %. It survives H.264 at CRF 16.
+- Typed URLs need measuring like any line, caret included: `BrowserFrame` at 800 px wide and 23 px leaves 552 px of text. French slugs run longer (« …/vus-usages-moins-30k » ran out of the field; « …/vus-usages-30k » fits).
+- A reply that replaces typing dots keeps the avatar still (`Bubble steadyAvatar`) and starts a frame early, or the avatar blinks out for a frame.
+- Give the French cut its own native-ear QA pass. The English pass doesn't catch calques (« des conversations sont devenues des prospects »), a contrast word with no contrast (« Mais le meilleur : »), or a comma that turns a Québec « -tu » question into a typo.
+- Mock listings show what a dealer scans first: price, then km. These values are illustrative inventory, not claims, so they need no source, but they must be plausible for the market, because a dealer spots a wrong price. Stats and results still need a source.

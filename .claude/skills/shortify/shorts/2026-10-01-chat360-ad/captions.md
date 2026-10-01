@@ -16,7 +16,7 @@ Seulement 51 % des questions complexes obtiennent une réponse en 24 heures.¹
 Chat360 répond tout de suite et réserve l’essai routier.
 Le chat typique envoie un lien. Chat360 fait la recherche.
 Il parle en premier. Il répond de vive voix. Et il est vraiment bilingue.
-41 % des conversations sont devenues des prospects le mois dernier.²
+41 % des conversations ont généré un prospect le mois dernier.²
 
 ¹ Pied Piper PSI, étude Internet Lead Effectiveness, février 2026 (3 290 sites de concessionnaires aux États-Unis).
 ² Données Chat360, septembre 2026.
@@ -35,7 +35,7 @@ Seulement 51 % des questions complexes obtiennent une réponse en 24 heures.¹
 Chat360 répond tout de suite et réserve l’essai routier.
 Le chat typique envoie un lien. Chat360 fait la recherche.
 Il parle en premier. Il répond de vive voix. Et il est vraiment bilingue.
-41 % des conversations sont devenues des prospects le mois dernier.²
+41 % des conversations ont généré un prospect le mois dernier.²
 
 ¹ Pied Piper PSI, étude Internet Lead Effectiveness, février 2026 (3 290 sites de concessionnaires aux États-Unis).
 ² Données Chat360, septembre 2026.

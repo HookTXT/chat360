@@ -164,8 +164,10 @@ export const Bubble: React.FC<{
   avatar?: boolean;
   weight?: number;
   pad?: [number, number];
+  /** Replaces TypingDots in place: the avatar stays put and only the bubble pops in. */
+  steadyAvatar?: boolean;
   style?: React.CSSProperties;
-}> = ({ from, lines, p, size = 40, reveal = 1, avatar = true, weight, pad, style }) => {
+}> = ({ from, lines, p, size = 40, reveal = 1, avatar = true, weight, pad, steadyAvatar, style }) => {
   const user = from === "user";
   const bubble: React.CSSProperties = user
     ? { background: C.mintDeep, color: C.white, borderRadius: "38px 38px 12px 38px" }
@@ -180,7 +182,7 @@ export const Bubble: React.FC<{
         alignItems: "flex-start",
         gap: 18,
         fontFamily: FONT,
-        ...popIn(p, 0.9),
+        ...(steadyAvatar ? {} : popIn(p, 0.9)),
         transformOrigin: user ? "100% 100%" : "0% 0%",
         ...style,
       }}
@@ -209,6 +211,7 @@ export const Bubble: React.FC<{
           lineHeight: 1.28,
           fontWeight: weight ?? (user ? 700 : 600),
           letterSpacing: -0.2,
+          ...(steadyAvatar ? { ...popIn(p, 0.9), transformOrigin: "0% 0%" } : {}),
         }}
       >
         <Words lines={lines} reveal={reveal} />

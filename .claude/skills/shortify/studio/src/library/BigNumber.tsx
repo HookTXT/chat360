@@ -15,7 +15,7 @@ export const BigNumber: React.FC<{
   locale: string;
   lead?: string;
   pre?: string;
-  suffix?: string; // glued to the number: "%", " %" (narrow no-break space), "×"
+  suffix?: string; // glued to the number: "%", "\u00a0%" (FR, no-break space: Inter latin has no U+202F), "×"
   unit?: string; // word after the number: "hours", "heures"
   size?: number;
   color: string;

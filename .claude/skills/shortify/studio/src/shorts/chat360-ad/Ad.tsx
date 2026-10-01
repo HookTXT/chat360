@@ -239,7 +239,8 @@ const Answer: React.FC<{ c: Copy }> = ({ c }) => {
         f < b.bot ? (
           <TypingDots frame={f} p={enter(f, b.typing)} />
         ) : (
-          <Bubble from="bot" lines={c.answer.bot} p={enter(f, b.bot, 6)} size={38} reveal={linear(f, b.bot, b.botDur)} />
+          // Starts a frame early so the swap from the dots never lands on an empty frame.
+          <Bubble from="bot" lines={c.answer.bot} p={enter(f, b.bot - 1, 6)} size={38} reveal={linear(f, b.bot - 1, b.botDur)} steadyAvatar />
         ),
     },
     {
