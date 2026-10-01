@@ -4,21 +4,31 @@ Four words: **simple, bold, big, clean.** Every frame reads in about one second 
 
 Change this sheet only on purpose, after a side-by-side test. Log the change in `LESSONS.md`.
 
-## Colour (matches the landing page, `tailwind.config.ts`)
+## Brand mark
+
+The **CHAT360 .AI** wordmark Kevin supplied (2026-10-01): `studio/public/brand/chat360-ai-logo.png`, traced to vector by `studio/scripts/trace-logo.py` (never redrawn).
+
+- On paper: as supplied — mint "CHAT", gray `#575756` "360", mint bubble with white ".AI".
+- On dark: reversed — "360" turns white; nothing else changes.
+- The ".AI" bubble alone is the bot's avatar in chat mocks.
+- It replaces the old chat-bubble icon (`public/chat360-logo.png`) in videos.
+
+## Colour (taken from the brand mark)
 
 | Token | Dark look (home) | Light "paper" look |
 |---|---|---|
 | Ground | `#0B1716` near-black teal | `#F7F5F0` warm paper |
 | Text | `#FFFFFF` | `#111827` |
-| Muted text | `#99F6E4` at 70 % | `#6B7280` |
-| Accent | `#2DD4BF` (primary-400) | `#0F766E` (primary-700) |
+| Muted text | white at 62 % | `#6B7280` |
+| Accent | `#2AD3A3` (logo mint) | `#0B7A5A` (same hue, 4.9:1 on paper — use for text and fills with white on top) |
 | Proof highlight | `#FACC15` underline/box, sparingly | same |
 
-One accent per frame. No gradients across the whole frame; a soft radial glow behind the focal object is fine.
+One accent per frame. No gradients across the whole frame; a soft radial glow behind the focal object is fine. White text on `#2AD3A3` fails contrast — put dark ink (`#0B1716`) on mint fills.
 
 ## Type
 
-- System sans, heavy (800–900) for titles and numbers; 600 for labels.
+- Inter (OFL, shipped in `studio/public/fonts`) — the closest open match to the site's system stack. Heavy (800–900) for titles and numbers; 600 for labels.
+- Only glyphs in Inter's latin subset: no `≤`, `✓` or emoji — use words ("Under $30,000") or SVG icons.
 - Title at frame 0: 3–8 words, leads with what the viewer gets, poses the question the short answers. It becomes the cover.
 - Minimum on-canvas size (1080×1920): body labels 56 px, numbers 220 px+.
 

@@ -34,12 +34,32 @@ hook.md         # source hook, ratio, 3 versions, pick (stage 3)
 script.md       # locked script + cold-read changes (stage 4)
 voice/          # audio/avatar render + word timestamps (stage 5)
 plan.md         # visual-moment table (stage 6)
-build/          # graphics project + render (stage 7)
+build/          # renders: final-fr.mp4, final-en.mp4 (stage 7)
 qa/             # contact sheets + defect list (stage 8)
 captions.md     # one block per platform (stage 9)
-cover.png       # stage 9
+cover-<lang>.png # stage 9
 cost.md         # what this short spent
 ```
+
+The short's composition source lives in the studio, not in `build/`: `studio/src/shorts/<slug>/` (`Ad.tsx`, `copy.json` with FR + EN copy, `timeline.json` with scene frames, beats and SFX cues).
+
+## Studio (render tool)
+
+`studio/` is a Remotion 4 project: the graphics library (`src/library`, see GRAPHICS.md) plus one folder per short. First time: `cd studio && npm install` (and `pip install pillow numpy potracer fonttools brotli` for the logo trace, QA and text measuring).
+
+- **Stills while building:** `node scripts/stills.mjs <CompositionId> <outDir> 0,120,300 0.5 '{"lang":"fr"}'` — bundles once, renders any frames.
+- **Sound:** `node scripts/audio.mjs src/shorts/<slug>` synthesizes the bed + SFX from `timeline.json` and mixes to −14 LUFS. To use an approved bed instead, drop it in as `public/audio/<slug>-bed.wav` and add `--mix-only`.
+- **Render:** `node scripts/render.mjs <CompositionPrefix> <short-folder>` → `build/final-fr.mp4`, `build/final-en.mp4`, `cover-fr.png`, `cover-en.png`.
+- **QA:** `python3 scripts/qa.py <video> <short>/qa` → `auto.md` (length, loudness, cuts in hook, dark/paper split) + contact sheets with safe zones tinted.
+- **Text fit:** copy lines are hand-set (explicit line arrays). Measure them with the real font before rendering; French runs 10–25 % longer.
+
+## Motion-graphics-only shorts (no face, no voice)
+
+When Kevin asks for an ad or a pure motion-graphics short:
+- Stage 5 is skipped. Timing comes from the music grid (beats in `timeline.json`), not word timestamps.
+- The frame-0 title *is* the hook line — show it inside the product (e.g. a visitor's chat bubble), not as floating text.
+- On-screen text replaces captions: keep must-read text to ~3 words/second; chat bubbles may be skimmed.
+- The script lock still applies, but a re-render costs $0 — reopening it is cheap.
 
 ## The ten stages
 

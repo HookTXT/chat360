@@ -8,3 +8,8 @@ shorts/**/*.jpg
 shorts/**/voice/
 shorts/**/build/
 shorts/**/qa/
+
+# Render studio: dependencies, generated audio, scratch renders.
+studio/node_modules/
+studio/out/
+studio/public/audio/*.wav
