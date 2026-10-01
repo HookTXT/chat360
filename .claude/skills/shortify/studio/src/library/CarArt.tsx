@@ -27,11 +27,16 @@ const Wheel: React.FC<{ cx: number }> = ({ cx }) => (
   </g>
 );
 
-export const CarArt: React.FC<{ width: number | string; paint?: Paint; night?: boolean }> = ({ width, paint = "blue", night }) => {
+export const CarArt: React.FC<{ width?: number | string; height?: number | string; paint?: Paint; night?: boolean }> = ({
+  width,
+  height,
+  paint = "blue",
+  night,
+}) => {
   const id = useId().replace(/:/g, "");
   const p = PAINT[paint];
   return (
-    <svg viewBox="0 0 400 175" width={width} style={{ display: "block" }}>
+    <svg viewBox="0 0 400 175" width={width} height={height} style={{ display: "block" }}>
       <defs>
         <linearGradient id={`b${id}`} x1="0" y1="0" x2="0" y2="1">
           <stop offset="0" stopColor={p.light} />
@@ -51,23 +56,24 @@ export const CarArt: React.FC<{ width: number | string; paint?: Paint; night?: b
       <ellipse cx={200} cy={160} rx={178} ry={13} fill={`url(#s${id})`} />
       {/* body */}
       <path
-        d="M30 122 C30 104 40 95 62 92 L112 87 C124 63 146 49 180 47 L254 47 C280 48 300 62 320 84 L352 89 C370 92 378 102 378 116 L378 124 C378 131 373 136 365 136 L330 136 A32 32 0 0 0 266 136 L134 136 A32 32 0 0 0 70 136 L41 136 C34 136 30 131 30 124 Z"
+        d="M30 120 C30 98 36 86 52 80 L92 76 C102 52 118 36 152 34 L266 34 C288 35 304 50 322 76 L354 84 C372 88 378 100 378 114 L378 124 C378 131 373 136 365 136 L330 136 A32 32 0 0 0 266 136 L134 136 A32 32 0 0 0 70 136 L41 136 C34 136 30 131 30 124 Z"
         fill={`url(#b${id})`}
       />
       {/* greenhouse */}
-      <path d="M124 86 C134 66 150 56 180 55 L250 55 C270 56 286 66 302 84 Z" fill={`url(#g${id})`} />
-      <rect x={209} y={53} width={7} height={34} fill={p.shade} />
+      <path d="M104 78 C112 56 126 44 156 43 L262 43 C280 44 294 56 308 76 Z" fill={`url(#g${id})`} />
+      <rect x={206} y={41} width={8} height={38} fill={p.shade} />
       {/* window glare */}
-      <path d="M150 82 L176 58 L190 58 L164 82 Z" fill="#FFFFFF" opacity={0.12} />
-      <path d="M236 82 L256 58 L264 58 L244 82 Z" fill="#FFFFFF" opacity={0.1} />
+      <path d="M136 76 L164 47 L180 47 L152 76 Z" fill="#FFFFFF" opacity={0.12} />
+      <path d="M238 76 L262 47 L272 47 L248 76 Z" fill="#FFFFFF" opacity={0.1} />
       {/* shoulder line + door seam */}
-      <path d="M58 100 L360 100" stroke={p.light} strokeOpacity={0.55} strokeWidth={2.5} fill="none" />
-      <path d="M210 88 L212 132" stroke={p.shade} strokeOpacity={0.8} strokeWidth={2} fill="none" />
+      <path d="M52 96 L362 96" stroke={p.light} strokeOpacity={0.55} strokeWidth={2.5} fill="none" />
+      <path d="M210 80 L212 132" stroke={p.shade} strokeOpacity={0.8} strokeWidth={2} fill="none" />
       <rect x={176} y={104} width={20} height={4} rx={2} fill={p.shade} />
       <rect x={250} y={104} width={20} height={4} rx={2} fill={p.shade} />
-      {/* lights */}
-      <path d="M356 95 L375 99 L375 107 L358 106 Z" fill="#FDE68A" />
-      <path d="M31 98 L46 97 L46 108 L31 108 Z" fill="#EF4444" />
+      {/* roof rails + lights */}
+      <path d="M150 31 L268 31" stroke="#111827" strokeOpacity={0.55} strokeWidth={4} strokeLinecap="round" />
+      <path d="M356 92 L375 97 L375 106 L358 104 Z" fill="#FDE68A" />
+      <path d="M31 92 L46 90 L46 104 L31 104 Z" fill="#EF4444" />
       {/* lower cladding */}
       <path d="M41 128 L70 128 M134 128 L266 128 M330 128 L370 128" stroke="#111827" strokeOpacity={0.45} strokeWidth={6} strokeLinecap="round" />
       <Wheel cx={102} />
@@ -99,8 +105,9 @@ export const CarPhoto: React.FC<{ width: number | string; height: number; paint?
       justifyContent: "center",
     }}
   >
-    <div style={{ width: "86%", marginBottom: height * 0.06 }}>
-      <CarArt width="100%" paint={paint} night={night} />
+    {/* Sized by height so the roof never clips, whatever the tile's aspect ratio. */}
+    <div style={{ height: Math.round(height * 0.84), maxWidth: "90%", marginBottom: Math.round(height * 0.03), display: "flex", justifyContent: "center" }}>
+      <CarArt height="100%" paint={paint} night={night} />
     </div>
   </div>
 );
