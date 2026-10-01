@@ -58,7 +58,12 @@ export const VoiceOrb: React.FC<{ frame: number; size: number; level?: number; o
   );
 };
 
-export const Listening: React.FC<{ frame: number; text: string; onDark?: boolean }> = ({ frame, text, onDark }) => (
+export const Listening: React.FC<{ frame: number; text: string; onDark?: boolean; icon?: "mic" | "speaker" }> = ({
+  frame,
+  text,
+  onDark,
+  icon = "mic",
+}) => (
   <div style={{ display: "flex", alignItems: "center", gap: 16, fontFamily: FONT }}>
     <span
       style={{
@@ -69,7 +74,7 @@ export const Listening: React.FC<{ frame: number; text: string; onDark?: boolean
         opacity: 0.45 + 0.55 * (0.5 + 0.5 * Math.sin(frame / 4)),
       }}
     />
-    <Icon name="mic" size={40} color={onDark ? C.white : C.text} />
+    <Icon name={icon} size={40} color={onDark ? C.white : C.text} />
     <span style={{ fontSize: 42, fontWeight: 800, color: onDark ? C.white : C.text, letterSpacing: -0.5 }}>{text}</span>
   </div>
 );

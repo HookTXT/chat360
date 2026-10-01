@@ -9,10 +9,12 @@ export const StepLadder: React.FC<{
   steps: { text: string; at: number }[];
   tone: Tone;
   width?: number;
-}> = ({ frame, steps, tone, width = 860 }) => {
+  size?: number; // text px; circle scales with it
+}> = ({ frame, steps, tone, width = 860, size = 64 }) => {
+  const dot = Math.round(size * 1.42);
   const t = toneOf(tone);
   return (
-    <div style={{ width, fontFamily: FONT, display: "flex", flexDirection: "column", gap: 34 }}>
+    <div style={{ width, fontFamily: FONT, display: "flex", flexDirection: "column", gap: Math.round(size * 0.4) }}>
       {steps.map((s, i) => {
         const p = enter(frame, s.at);
         const next = steps[i + 1];
@@ -21,22 +23,24 @@ export const StepLadder: React.FC<{
           <div key={s.text} style={{ display: "flex", alignItems: "center", gap: 28, ...fadeUp(p, 24) }}>
             <div
               style={{
-                width: 92,
-                height: 92,
-                borderRadius: 46,
+                width: dot,
+                height: dot,
+                borderRadius: dot / 2,
                 flexShrink: 0,
                 background: t.accent,
                 color: tone === "dark" ? "#0B1716" : "#FFFFFF",
                 display: "flex",
                 alignItems: "center",
                 justifyContent: "center",
-                fontSize: 48,
+                fontSize: Math.round(size * 0.75),
                 fontWeight: 900,
               }}
             >
-              {done > 0.5 ? <Icon name="check" size={50} color={tone === "dark" ? "#0B1716" : "#FFFFFF"} stroke={3} /> : i + 1}
+              {done > 0.5 ? <Icon name="check" size={Math.round(size * 0.78)} color={tone === "dark" ? "#0B1716" : "#FFFFFF"} stroke={3} /> : i + 1}
             </div>
-            <div style={{ fontSize: 64, fontWeight: 900, color: t.text, letterSpacing: -1.5, opacity: 1 - 0.5 * done }}>{s.text}</div>
+            <div style={{ fontSize: size, fontWeight: 900, color: t.text, letterSpacing: -size * 0.024, opacity: 1 - 0.45 * done, whiteSpace: "nowrap" }}>
+              {s.text}
+            </div>
           </div>
         );
       })}

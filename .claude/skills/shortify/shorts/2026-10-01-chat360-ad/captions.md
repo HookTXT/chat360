@@ -1,40 +1,44 @@
 # Captions — stage 9
 
-Lane: bottom → keyword DEMO / DÉMO → DM sends the demo booking (https://calendly.com/hooktxt). Comment promise only where a DM automation can answer (Instagram, Facebook). Five hashtags max. The 34% line carries its source.
+Lane: bottom → keyword DEMO / DÉMO → DM sends the demo booking (https://calendly.com/hooktxt). Comment promise only where a DM automation can answer (Instagram, Facebook). Five hashtags max. Every number carries its source.
+
+**DM automation (FR):** the trigger must accept DÉMO, DEMO, démo and demo — many people won't type the accent.
 
 ---
 
 ## FR — Instagram
 
-Commente « DÉMO » pour recevoir la démo complète de Chat360 + voir comment il réserve des essais routiers sur ton site.
+Commente « DÉMO » pour recevoir la démo complète de Chat360 + voir comment il répond et réserve des essais routiers sur ton site, 24/7.
 
-Vite, l'IA, vends-moi cette auto.
+Vite, l’IA, vends-moi cette auto.
 Un chat typique répond : « Nous vous répondrons bientôt. »
-Temps de réponse moyen dans l'industrie : 4+ heures.
-Chat360 répond en moins de 30 secondes en moyenne… et réserve l'essai routier.
-Les autres chats envoient un lien. Chat360 ouvre la page.
+Seulement 51 % des questions complexes obtiennent une réponse en 24 heures.¹
+Chat360 répond tout de suite et réserve l’essai routier.
+Le chat typique envoie un lien. Chat360 fait la recherche.
 Il parle en premier. Il répond de vive voix. Et il est vraiment bilingue.
-34 % des chats convertis en rendez-vous.*
+41 % des conversations sont devenues des prospects le mois dernier.²
 
-*Données agrégées de 50+ concessionnaires canadiens utilisant Chat360 (2024-2025).
+¹ Pied Piper PSI, étude Internet Lead Effectiveness, février 2026 (3 290 sites de concessionnaires aux États-Unis).
+² Données Chat360, septembre 2026.
 
 #concessionnaire #venteauto #Québec #IA #Chat360
 
 ## FR — Facebook
 
-(Même texte qu'Instagram.)
+(Même texte qu’Instagram.)
 
 ## FR — TikTok · YouTube Shorts · X · LinkedIn
 
-Vite, l'IA, vends-moi cette auto.
+Vite, l’IA, vends-moi cette auto.
 Un chat typique répond : « Nous vous répondrons bientôt. »
-Temps de réponse moyen dans l'industrie : 4+ heures.
-Chat360 répond en moins de 30 secondes en moyenne… et réserve l'essai routier.
-Les autres chats envoient un lien. Chat360 ouvre la page.
+Seulement 51 % des questions complexes obtiennent une réponse en 24 heures.¹
+Chat360 répond tout de suite et réserve l’essai routier.
+Le chat typique envoie un lien. Chat360 fait la recherche.
 Il parle en premier. Il répond de vive voix. Et il est vraiment bilingue.
-34 % des chats convertis en rendez-vous.*
+41 % des conversations sont devenues des prospects le mois dernier.²
 
-*Données agrégées de 50+ concessionnaires canadiens utilisant Chat360 (2024-2025).
+¹ Pied Piper PSI, étude Internet Lead Effectiveness, février 2026 (3 290 sites de concessionnaires aux États-Unis).
+² Données Chat360, septembre 2026.
 
 Réserve ta démo : https://calendly.com/hooktxt
 
@@ -44,17 +48,18 @@ Réserve ta démo : https://calendly.com/hooktxt
 
 ## EN — Instagram
 
-Comment "DEMO" to get the full Chat360 demo + see how it books test drives on your website.
+Comment "DEMO" to get the full Chat360 demo + see how it answers and books test drives on your website, 24/7.
 
 Quick, AI, sell me this car.
 A typical chat replies: "Someone will get back to you."
-Industry average response time: 4+ hours.
-Chat360 replies in under 30 seconds on average… and books the test drive.
-Other chats send a link. Chat360 opens the page.
-It speaks first. It answers out loud. And it's truly bilingual.
-34% of chats convert to booked appointments.*
+Only 51% of complex questions get an answer within 24 hours.¹
+Chat360 answers right away and books the test drive.
+A typical chat sends a link. Chat360 does the search.
+It speaks first. It answers by voice. And it’s truly bilingual.
+41% of chats turned into leads last month.²
 
-*Aggregated data from 50+ Canadian dealerships using Chat360 (2024-2025).
+¹ Pied Piper PSI, Internet Lead Effectiveness study, February 2026 (3,290 U.S. dealership websites).
+² Chat360 data, September 2026.
 
 #cardealership #carsales #autodealer #AI #Chat360
 
@@ -66,13 +71,14 @@ It speaks first. It answers out loud. And it's truly bilingual.
 
 Quick, AI, sell me this car.
 A typical chat replies: "Someone will get back to you."
-Industry average response time: 4+ hours.
-Chat360 replies in under 30 seconds on average… and books the test drive.
-Other chats send a link. Chat360 opens the page.
-It speaks first. It answers out loud. And it's truly bilingual.
-34% of chats convert to booked appointments.*
+Only 51% of complex questions get an answer within 24 hours.¹
+Chat360 answers right away and books the test drive.
+A typical chat sends a link. Chat360 does the search.
+It speaks first. It answers by voice. And it’s truly bilingual.
+41% of chats turned into leads last month.²
 
-*Aggregated data from 50+ Canadian dealerships using Chat360 (2024-2025).
+¹ Pied Piper PSI, Internet Lead Effectiveness study, February 2026 (3,290 U.S. dealership websites).
+² Chat360 data, September 2026.
 
 Book your demo: https://calendly.com/hooktxt
 

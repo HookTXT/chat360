@@ -19,7 +19,8 @@ The library lives in the render project: `studio/src/library/` (Remotion 4, Reac
 | G7 | **Site tour** — browser whose URL types itself, filter chips, result rows (the site moving on its own) | `Browser.tsx` | url, typedChars, chips, rows |
 | G8 | **Voice orb** — rings travel out, bars move with the voice, "Listening…" | `Voice.tsx` | frame, size, level |
 | — | Brand mark (traced, never redrawn), reversed on dark; bubble mark for the bot avatar | `Logo.tsx` | width, tone, word/bubble reveal |
-| — | Ground (tone + one soft glow), Headline (accent span, strike, dim), icons (SVG, no glyph fallbacks) | `Ground.tsx`, `Text.tsx`, `icons.tsx` | — |
+| — | Vehicle: side-profile illustration on a studio backdrop (`CarPhoto`, paint per car) — stands in for listing photos | `CarArt.tsx` | paint, night |
+| — | Ground (tone + one soft glow + fine grain against banding), Headline (accent span, strike, dim), icons (SVG, no glyph fallbacks) | `Ground.tsx`, `Text.tsx`, `icons.tsx` | — |
 
 ## Line type → what to show
 
@@ -30,7 +31,7 @@ The library lives in the render project: `studio/src/library/` (Remotion 4, Reac
 | Claim | The real thing within 2 s, then explain | Proof first. Crop to the word. |
 | Number | G1 | Never just appears |
 | List | G2 + one visual per item | "Best part" kicker before the best item |
-| Steps / how it works | G5 tags inside the chat, or G3 | Hang and build, don't cut |
+| Steps / how it works | G3 ladder, big, outside the mock (≥ 54 px) | Hang and build, don't cut. Claims never live only inside a mock. |
 | A prompt / what the AI does | G5 (site widget) or G7 | App/widget, not a terminal |
 | The website moving | G7 | URL types, filters land, rows slide in |
 | Voice | G8 + G5 transcript | |
@@ -45,4 +46,4 @@ turns into = morph · pick = pick/highlight · one to all = zoom out · send to 
 
 - Map / regional reach (e.g. Québec vs. rest of Canada).
 - Timeline of a lead (late-night message → instant reply → booked appointment).
-- Real vehicle photos: `CarTile` is a placeholder in the site's own style; swap in real inventory shots when available.
+- Real vehicle photos: `CarPhoto` is an illustration; swap in licensed inventory shots when available.

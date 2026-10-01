@@ -1,5 +1,6 @@
 import React from "react";
 import { C, FONT } from "../style/tokens";
+import { CarPhoto, type Paint } from "./CarArt";
 import { BubbleMark } from "./Logo";
 import { Icon, type IconName } from "./icons";
 import { easeInOut, enter, popIn } from "./motion";
@@ -58,7 +59,10 @@ export const ChatPanel: React.FC<{
         </div>
       </div>
     </div>
-    <div style={{ position: "relative", flex: 1, overflow: "hidden" }}>{children}</div>
+    <div style={{ position: "relative", flex: 1, overflow: "hidden" }}>
+      {children}
+      <div style={{ position: "absolute", left: 0, right: 0, top: 0, height: 34, background: "linear-gradient(#FFFFFF, rgba(255,255,255,0))" }} />
+    </div>
   </div>
 );
 
@@ -69,7 +73,10 @@ export type ThreadItem = {
   render: (p: number) => React.ReactNode;
 };
 
-/** Top-anchored thread; when content outgrows the viewport it scrolls up smoothly. */
+/**
+ * Top-anchored thread. When content outgrows the viewport it scrolls up smoothly,
+ * snapping to item boundaries so no message is ever left half-cut at the top.
+ */
 export const Thread: React.FC<{
   items: ThreadItem[];
   frame: number;
@@ -85,11 +92,17 @@ export const Thread: React.FC<{
     y += it.height + gap;
   }
   const bottomOf = (i: number) => tops[i] + items[i].height + pad;
-  const target = (i: number) => Math.max(0, bottomOf(i) - viewport);
+  // Smallest scroll that both shows item i fully and starts exactly at an item's top.
+  const target = (i: number) => {
+    const need = bottomOf(i) - viewport;
+    if (need <= 0) return 0;
+    const snap = tops.map((t) => t - pad).find((t) => t >= need);
+    return snap ?? need;
+  };
   let offset = 0;
   let prev = 0;
   items.forEach((it, i) => {
-    const t = target(i);
+    const t = Math.max(prev, target(i));
     offset += (t - prev) * enter(frame, it.at, scrollDur, easeInOut);
     prev = t;
   });
@@ -193,20 +206,20 @@ export const Bubble: React.FC<{
   );
 };
 
-export const TypingDots: React.FC<{ frame: number; p: number }> = ({ frame, p }) => (
+export const TypingDots: React.FC<{ frame: number; p: number; neutral?: boolean }> = ({ frame, p, neutral }) => (
   <div style={{ display: "flex", alignItems: "center", gap: 18, ...popIn(p, 0.9), transformOrigin: "0% 0%" }}>
     <div
       style={{
         width: 64,
         height: 64,
         borderRadius: 32,
-        background: "#E7F8F2",
+        background: neutral ? "#D1D5DB" : "#E7F8F2",
         display: "flex",
         alignItems: "center",
         justifyContent: "center",
       }}
     >
-      <BubbleMark size={38} style={{ marginTop: 3 }} />
+      {neutral ? <Icon name="comment" size={34} color="#6B7280" /> : <BubbleMark size={38} style={{ marginTop: 3 }} />}
     </div>
     <div style={{ background: C.bubbleBot, borderRadius: "12px 38px 38px 38px", padding: "26px 34px", display: "flex", gap: 12 }}>
       {[0, 1, 2].map((i) => {
@@ -263,25 +276,14 @@ export const Tag: React.FC<{ n?: number; icon?: IconName; text: string; p: numbe
   </div>
 );
 
-/** Vehicle image placeholder in the site's style: gradient tile + car mark (we have no real photos). */
-export const CarTile: React.FC<{ width: number | string; height: number; iconSize?: number; hue?: "blue" | "slate" | "teal" }> = ({
+/** Vehicle image: studio-backdrop illustration in place of a listing photo (we have no real photos). */
+export const CarTile: React.FC<{ width: number | string; height: number; iconSize?: number; hue?: "blue" | "slate" | "teal"; paint?: Paint; night?: boolean }> = ({
   width,
   height,
-  iconSize = 110,
   hue = "blue",
-}) => {
-  const bg =
-    hue === "blue"
-      ? "linear-gradient(135deg, #38BDF8 0%, #2563EB 100%)"
-      : hue === "teal"
-        ? "linear-gradient(135deg, #34D399 0%, #0F766E 100%)"
-        : "linear-gradient(135deg, #94A3B8 0%, #475569 100%)";
-  return (
-    <div style={{ width, height, borderRadius: 24, background: bg, display: "flex", alignItems: "center", justifyContent: "center" }}>
-      <Icon name="car" size={iconSize} color="rgba(255,255,255,0.95)" />
-    </div>
-  );
-};
+  paint,
+  night,
+}) => <CarPhoto width={width} height={height} paint={paint ?? (hue === "slate" ? "silver" : hue)} night={night} />;
 
 export const VehicleCard: React.FC<{
   title: string;
@@ -289,55 +291,67 @@ export const VehicleCard: React.FC<{
   cta: string;
   p: number;
   press?: number; // 0..1 button press
-}> = ({ title, meta, cta, p, press = 0 }) => (
-  <div
-    style={{
-      marginLeft: 82,
-      width: 640,
-      background: C.card,
-      border: "2px solid #E5E7EB",
-      borderRadius: 32,
-      padding: 22,
-      fontFamily: FONT,
-      boxShadow: "0 16px 40px rgba(17,24,39,0.08)",
-      ...popIn(p, 0.92),
-      transformOrigin: "0% 0%",
-    }}
-  >
-    <CarTile width="100%" height={190} />
-    <div style={{ fontSize: 38, fontWeight: 800, color: C.text, marginTop: 18, letterSpacing: -0.5 }}>{title}</div>
-    <div style={{ fontSize: 28, fontWeight: 600, color: C.textMuted, marginTop: 4 }}>{meta}</div>
+  paint?: Paint;
+}> = ({ title, meta, cta, p, press = 0, paint = "blue" }) => {
+  const down = Math.sin(Math.min(1, press) * Math.PI);
+  return (
     <div
       style={{
-        position: "relative",
-        overflow: "hidden",
-        marginTop: 18,
-        height: 84,
-        borderRadius: 999,
-        background: C.mintDeep,
-        color: C.white,
-        fontSize: 32,
-        fontWeight: 800,
-        display: "flex",
-        alignItems: "center",
-        justifyContent: "center",
-        transform: `scale(${1 - 0.05 * Math.sin(Math.min(1, press) * Math.PI)})`,
+        marginLeft: 82,
+        width: 600,
+        background: C.card,
+        border: "2px solid #E5E7EB",
+        borderRadius: 32,
+        padding: 20,
+        fontFamily: FONT,
+        boxShadow: "0 16px 40px rgba(17,24,39,0.08)",
+        ...popIn(p, 0.92),
+        transformOrigin: "0% 0%",
       }}
     >
-      <span
+      <CarTile width="100%" height={150} paint={paint} />
+      <div style={{ fontSize: 36, fontWeight: 800, color: C.text, marginTop: 14, letterSpacing: -0.5 }}>{title}</div>
+      <div style={{ fontSize: 28, fontWeight: 600, color: C.textMuted, marginTop: 2 }}>{meta}</div>
+      <div
         style={{
-          position: "absolute",
-          width: 700 * press,
-          height: 700 * press,
-          borderRadius: "50%",
-          background: "rgba(255,255,255,0.22)",
-          opacity: 1 - press,
+          position: "relative",
+          marginTop: 14,
+          height: 78,
+          borderRadius: 999,
+          clipPath: "inset(0 round 999px)",
+          background: C.mintDeep,
+          color: C.white,
+          fontSize: 31,
+          fontWeight: 800,
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "center",
+          transform: `scale(${1 - 0.04 * down})`,
+          filter: `brightness(${1 - 0.18 * down})`,
         }}
-      />
-      {cta}
+      >
+        {cta}
+        {press > 0 && press < 1 ? (
+          <span
+            style={{
+              position: "absolute",
+              left: "50%",
+              top: "50%",
+              width: 56,
+              height: 56,
+              marginLeft: -28,
+              marginTop: -28,
+              borderRadius: 28,
+              background: "rgba(255,255,255,0.55)",
+              transform: `scale(${0.5 + press})`,
+              opacity: 1 - press,
+            }}
+          />
+        ) : null}
+      </div>
     </div>
-  </div>
-);
+  );
+};
 
 export const Booked: React.FC<{ title: string; sub: string; p: number }> = ({ title, sub, p }) => (
   <div

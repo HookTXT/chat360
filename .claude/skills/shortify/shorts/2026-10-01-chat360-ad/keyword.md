@@ -7,3 +7,5 @@
   - DM automations / last captions: **not checked** — no DM tool or social account is connected to this session. Kevin: confirm no other active automation triggers on "DEMO"/"DÉMO" before go.
   - Sayable after one listen, not a common filler word. ✅
 - **DM sends:** demo booking — https://calendly.com/hooktxt
+
+- **FR trigger spelling:** the DM automation must accept DÉMO, DEMO, démo and demo — many people won't type the accent (cold read, 2026-10-01).

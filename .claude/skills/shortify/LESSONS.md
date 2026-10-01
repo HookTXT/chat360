@@ -22,3 +22,9 @@ Seeded from the Shortify guide; append our own as they happen (date, short, what
 - Glyphs outside Inter's latin subset (≤, ✓, emoji) fall back to another font. Use words or SVG icons.
 - A white panel with nothing in it reads as broken. Let widgets grow with their content, and show a skeleton while a page "loads".
 - YouTube `/shorts` tabs don't load through Firecrawl. Take a creator's median from the channel RSS feed (15 latest uploads, exact view counts).
+- Kevin (2026-10-01): never use Chat360's own site as the source of an industry number. Industry stats come from an independent study, named on screen with its year; Chat360's results are Kevin's first-party numbers, labelled with the month ("Chat360 data · September 2026").
+- Every scene must have content on its cut frame. Start the first entrance a few frames before the cut, or the cut flashes an empty ground.
+- Chat mocks scroll to whole messages: snap to item boundaries and fade under the header, so a bubble is never left half-cut.
+- The scene's claims go big, outside the widget (step ladder ≥ 54 px). Pills inside a mock read at about 11 pt on a phone.
+- A logo that glides must finish before the next element enters its path.
+- The hook's typing dots get a neutral avatar. The brand avatar there makes the next "typical chat" shot read as if Chat360 were the slow one.

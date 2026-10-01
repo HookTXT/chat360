@@ -11,18 +11,19 @@
 
 chat360.ca — identical to this repo's `components/` (EN) and `components/fr/` (FR). Live page read via Firecrawl on 2026-10-01; direct fetch of chat360.ca and i.ibb.co is blocked by this session's egress policy. Logo: `public/chat360-logo.png` (same file the site hot-links).
 
-## Numbers we may use (verbatim, with source)
+## Numbers on screen (v1.2 — Kevin: "find good source, not chat360 as a source")
 
-| Number | Exact wording on site | Source |
+| Number | Exact wording at the source | Source (checked 2026-10-01) |
 |---|---|---|
-| < 30 sec | "Average response time" | `components/Features.tsx` stats strip |
-| 4+ hours | "(vs. 4+ hours industry average)" | `components/Features.tsx` stats strip |
-| 34% | "Chat-to-appointment conversion rate" | `Features.tsx`, `Solution.tsx` |
-| 47% | "Leads captured outside business hours" | `Features.tsx`, `Solution.tsx` |
-| 50+ | "Based on aggregated data from 50+ Canadian dealerships using Chat360 (2024-2025)" | `Features.tsx` |
-| 24/7 | "Online 24/7", "24/7/365 Always online" | `Hero.tsx`, `Features.tsx` |
+| 51% | "Dealers answer a web customer's 'typical' inquiry within 24 hours 78% of the time on average, often through automated AI messages. However, that rate drops to just 51% when customers ask more complex questions requiring thoughtful human engagement." | Pied Piper PSI, *Internet Lead Effectiveness Auto Industry Study*, press release Feb. 23, 2026 — 3,290 U.S. dealership websites, inquiries sent during business hours. https://www.piedpiperpsi.com/press/press-release-infiniti-dealers-rank-highest-in-2026-web-lead-response-study-ai-and-automation-drive-industry-improvement-512.htm |
+| 41% | Chats that turned into leads, last month | Kevin, 2026-10-01 ("je suis à 41% le dernier mois de lead gen") — first-party, labelled "Chat360 data · September 2026" on screen. Confirm the definition (leads ÷ conversations) before go. |
 
-Do **not** use: "up to 60% of after-hours leads lost" (no citation on the page); setup time (site says "Live in 1 Day", FAQ says "14 days", testimonial says "2 weeks" — inconsistent).
+Dropped from the video (self-sourced from chat360.ca): "< 30 sec average response", "4+ hours industry average", "34% chat-to-appointment", "47% after hours".
+
+### Verified reserve stats (not used in this cut)
+
+- Harvard Business Review, Oldroyd, McElheran & Elkington, "The Short Life of Online Sales Leads" (March 2011): firms that tried to contact potential customers within an hour "were nearly seven times as likely to qualify the lead … as those that tried to contact the customer even an hour later — and more than 60 times as likely as companies that waited 24 hours or longer" (1.25 million leads, 42 U.S. companies). Same article: of 2,241 U.S. companies audited, "the average response time, among companies that responded within 30 days, was 42 hours"; 23% never responded. Cross-industry, 2011.
+- Pied Piper 2026 (same release): dealers answer a *typical* web inquiry within 24 h 78% of the time.
 
 ## Product claims we may show (site wording)
 
@@ -36,6 +37,6 @@ Do **not** use: "up to 60% of after-hours leads lost" (no citation on the page);
 
 DÉMO (FR) / DEMO (EN) — permanent bottom-lane words in `../../keywords.md`.
 
-## Hook options
+## Hook
 
-Pending stage 3 research → `hook.md`.
+"Quick, AI, sell me this car." — adapted from a 270× outlier (`hook.md`).

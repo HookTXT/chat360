@@ -105,8 +105,8 @@ export const LibraryPreview: React.FC = () => {
               verb="Comment"
               word="WORD"
               placeholder="Add a comment…"
-              url="chat360.ca"
-              at={{ logo: 0, line: 12, word: 24, box: 34, type: 44, send: 60, url: 66 }}
+              dm={{ from: "Chat360", text: "Here’s your link.", button: "Open" }}
+              at={{ logo: 0, line: 12, word: 24, box: 34, type: 44, send: 60, dm: 66 }}
             />
           )}
         </Slot>

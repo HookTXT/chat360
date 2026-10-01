@@ -4,67 +4,132 @@
     "hook": {
       "closed": "Closed",
       "pageUrl": "yourdealership.ca/2027-honda-hr-v-sport",
-      "lines": ["Quick, AI,", "sell me this car."]
+      "lines": [
+        "Quick, AI,",
+        "sell me this car."
+      ]
     },
-    "chat": { "title": "Chat360 AI", "status": "Online 24/7" },
+    "chat": {
+      "title": "Chat360 AI",
+      "status": "Online 24/7"
+    },
     "problem": {
       "tag": "Typical chat",
-      "bubble": ["Someone will get", "back to you."],
-      "unit": "hours",
-      "label": ["industry average", "response time"],
-      "source": "Source: chat360.ca"
+      "bubble": [
+        "Someone will get",
+        "back to you."
+      ],
+      "lead": "Only",
+      "value": 51,
+      "suffix": "%",
+      "label": [
+        "of complex questions get",
+        "an answer within 24 hours"
+      ],
+      "source": "Pied Piper PSI, Internet Lead Effectiveness study, Feb. 2026 · 3,290 U.S. dealer websites"
     },
     "answer": {
-      "user": ["Quick, AI, sell me this car."],
-      "tag1": "Avg. reply: < 30 sec",
-      "bot": ["Did you know this 2027", "HR-V SPORT is all-wheel", "drive with only 12 km on", "the odometer? Want me to", "reserve it for a test drive?"],
+      "user": [
+        "Quick, AI, sell me this car."
+      ],
+      "tag1": "Answers right away, 24/7",
+      "bot": [
+        "It’s AWD with only 12 km.",
+        "Want a test drive?"
+      ],
       "cardTitle": "2027 Honda HR-V SPORT",
       "cardMeta": "12 km · AWD · Black roof",
       "cardCta": "Book a test drive",
       "tag2": "Books the test drive",
       "bookedTitle": "Test drive booked",
-      "bookedSub": "Synced. Confirmed."
+      "bookedSub": "Added to calendar"
     },
     "twist": {
-      "h1": "Other chats send a link.",
+      "h1": "A typical chat sends a link.",
       "linkChip": "yourdealership.ca/inventory?id=…",
       "h2a": "Chat360 ",
-      "h2b": "opens the page.",
-      "url": "yourdealership.ca/inventory/used?body=suv&max-price=30000",
-      "query": ["A used SUV under $30,000"],
-      "chips": ["Used", "SUV", "Under $30,000", "AWD"],
-      "rows": [
-        ["Honda CR-V 2021", "62,000 km"],
-        ["Toyota RAV4 2020", "71,500 km"],
-        ["Mazda CX-5 2021", "48,200 km"]
+      "h2b": "does the search.",
+      "query": [
+        "A used SUV under $30,000"
       ],
-      "reply": ["3 SUVs match."]
+      "chips": [
+        "Used",
+        "SUV",
+        "Under $30,000"
+      ],
+      "rows": [
+        [
+          "2021 Honda CR-V",
+          "62,000 km"
+        ],
+        [
+          "2020 Toyota RAV4",
+          "71,500 km"
+        ],
+        [
+          "2021 Mazda CX-5",
+          "48,200 km"
+        ]
+      ],
+      "urlBase": "yourdealership.ca/inventory",
+      "urlSearch": "/used-suv-under-30k"
     },
     "list": {
-      "row1": "It speaks first.",
-      "row2": "It answers out loud.",
-      "kicker": "But here’s the best part:",
-      "row3": "Truly bilingual.",
+      "header": "Chat360…",
+      "row1": "speaks first.",
+      "row2": "answers by voice.",
+      "kicker": "Best part:",
+      "row3": "is truly bilingual.",
       "greetUrl": "yourdealership.ca/2022-honda-civic",
-      "greet": ["Any questions about", "the 2022 Honda Civic?"],
-      "replies": ["Test Drive", "Ask a question"],
+      "greet": [
+        "Any questions about",
+        "the 2022 Honda Civic?"
+      ],
+      "replies": [
+        "Test Drive",
+        "Ask a question"
+      ],
       "listening": "Listening…",
-      "transcript": ["Perfect, you’re looking for a", "Volkswagen Jetta — we happen", "to have two in stock right now."],
-      "fr": ["Check le prix su’l Civic?"],
-      "frTag": "French detected",
-      "en": ["What’s the price on the Civic?"],
-      "enTag": "English detected"
+      "transcript": [
+        "Perfect — two Civics in stock",
+        "right now."
+      ],
+      "fr": [
+        "Check le prix su’l Civic?"
+      ],
+      "frTag": "FR",
+      "en": [
+        "What’s the price on the Civic?"
+      ],
+      "enTag": "EN",
+      "speaking": "Speaking…",
+      "ask": [
+        "Do you have the Civic in stock?"
+      ],
+      "frBot": [
+        "Bien sûr! Voici la Civic."
+      ],
+      "enBot": [
+        "Sure! Here’s the Civic."
+      ]
     },
     "proof": {
-      "label": ["of chats convert to", "booked appointments"],
-      "source": "Aggregated data from 50+ Canadian dealerships using Chat360 (2024-2025)"
+      "value": 41,
+      "suffix": "%",
+      "label": [
+        "of chats turned",
+        "into leads"
+      ],
+      "source": "Chat360 data · September 2026"
     },
     "cta": {
       "line": "The full demo is inside Chat360.",
       "verb": "Comment",
       "word": "DEMO",
       "placeholder": "Add a comment…",
-      "url": "chat360.ca"
+      "dmFrom": "Chat360",
+      "dmText": "Here’s your demo.",
+      "dmButton": "Book my demo"
     }
   },
   "fr": {
@@ -72,67 +137,135 @@
     "hook": {
       "closed": "Fermé",
       "pageUrl": "votreconcession.ca/2027-honda-hr-v-sport",
-      "lines": ["Vite, l’IA,", "vends-moi", "cette auto."]
+      "lines": [
+        "Vite, l’IA,",
+        "vends-moi",
+        "cette auto."
+      ]
     },
-    "chat": { "title": "Chat360 AI", "status": "En ligne 24/7" },
+    "chat": {
+      "title": "Chat360 AI",
+      "status": "En ligne 24/7"
+    },
     "problem": {
       "tag": "Chat typique",
-      "bubble": ["Nous vous répondrons", "bientôt."],
-      "unit": "heures",
-      "label": ["temps de réponse moyen", "dans l’industrie"],
-      "source": "Source : chat360.ca"
+      "bubble": [
+        "Nous vous répondrons",
+        "bientôt."
+      ],
+      "lead": "Seulement",
+      "value": 51,
+      "suffix": " %",
+      "label": [
+        "des questions complexes",
+        "obtiennent une réponse",
+        "en 24 heures"
+      ],
+      "source": "Pied Piper PSI, étude Internet Lead Effectiveness, févr. 2026 · 3 290 sites de concessionnaires (É.-U.)"
     },
     "answer": {
-      "user": ["Vite, l’IA, vends-moi cette auto."],
-      "tag1": "Réponse moyenne : < 30 sec",
-      "bot": ["Savais-tu que ce HR-V SPORT", "2027 est à traction intégrale", "avec seulement 12 km au", "compteur? Tu veux que je te", "le réserve pour un essai?"],
+      "user": [
+        "Vite, l’IA, vends-moi cette auto."
+      ],
+      "tag1": "Répond tout de suite, 24/7",
+      "bot": [
+        "Traction intégrale,",
+        "seulement 12 km.",
+        "Je te réserve un essai?"
+      ],
       "cardTitle": "Honda HR-V SPORT 2027",
       "cardMeta": "12 km · Intégrale · Toit noir",
       "cardCta": "Réserver un essai routier",
       "tag2": "Réserve l’essai routier",
       "bookedTitle": "Essai routier réservé",
-      "bookedSub": "Synchronisé. Confirmé."
+      "bookedSub": "Ajouté à l’agenda"
     },
     "twist": {
-      "h1": "Les autres chats envoient un lien.",
+      "h1": "Le chat typique envoie un lien.",
       "linkChip": "votreconcession.ca/inventaire?id=…",
       "h2a": "Chat360 ",
-      "h2b": "ouvre la page.",
-      "url": "votreconcession.ca/inventaire/usage?carrosserie=vus&prix-max=30000",
-      "query": ["Un VUS usagé sous 30 000 $"],
-      "chips": ["Usagé", "VUS", "Sous 30 000 $", "Intégrale"],
-      "rows": [
-        ["Honda CR-V 2021", "62 000 km"],
-        ["Toyota RAV4 2020", "71 500 km"],
-        ["Mazda CX-5 2021", "48 200 km"]
+      "h2b": "fait la recherche.",
+      "query": [
+        "Un VUS usagé sous 30 000 $"
       ],
-      "reply": ["3 VUS correspondent."]
+      "chips": [
+        "Usagé",
+        "VUS",
+        "Moins de 30 000 $"
+      ],
+      "rows": [
+        [
+          "Honda CR-V 2021",
+          "62 000 km"
+        ],
+        [
+          "Toyota RAV4 2020",
+          "71 500 km"
+        ],
+        [
+          "Mazda CX-5 2021",
+          "48 200 km"
+        ]
+      ],
+      "urlBase": "votreconcession.ca/inventaire",
+      "urlSearch": "/vus-usages-moins-30k"
     },
     "list": {
-      "row1": "Il parle en premier.",
-      "row2": "Il répond de vive voix.",
-      "kicker": "Mais le meilleur :",
-      "row3": "Vraiment bilingue.",
+      "header": "Chat360…",
+      "row1": "parle en premier.",
+      "row2": "répond de vive voix.",
+      "kicker": "Mais le meilleur :",
+      "row3": "est vraiment bilingue.",
       "greetUrl": "votreconcession.ca/honda-civic-2022",
-      "greet": ["Des questions sur la", "Honda Civic 2022?"],
-      "replies": ["Essai routier", "Poser une question"],
+      "greet": [
+        "Des questions sur la",
+        "Honda Civic 2022?"
+      ],
+      "replies": [
+        "Essai routier",
+        "Poser une question"
+      ],
       "listening": "J’écoute…",
-      "transcript": ["Parfait, tu regardes pour une", "Volkswagen Jetta, on en a", "justement deux en stock", "en ce moment."],
-      "fr": ["Check le prix su’l Civic?"],
-      "frTag": "Français détecté",
-      "en": ["What’s the price on the Civic?"],
-      "enTag": "Anglais détecté"
+      "transcript": [
+        "Parfait, on a deux Civic",
+        "en stock en ce moment."
+      ],
+      "fr": [
+        "Check le prix su’l Civic?"
+      ],
+      "frTag": "FR",
+      "en": [
+        "What’s the price on the Civic?"
+      ],
+      "enTag": "EN",
+      "speaking": "Je réponds…",
+      "ask": [
+        "Avez-vous la Civic en stock?"
+      ],
+      "frBot": [
+        "Bien sûr! Voici la Civic."
+      ],
+      "enBot": [
+        "Sure! Here’s the Civic."
+      ]
     },
     "proof": {
-      "label": ["des chats convertis", "en rendez-vous"],
-      "source": "Données agrégées de 50+ concessionnaires canadiens utilisant Chat360 (2024-2025)"
+      "value": 41,
+      "suffix": " %",
+      "label": [
+        "des conversations sont",
+        "devenues des prospects"
+      ],
+      "source": "Données Chat360 · septembre 2026"
     },
     "cta": {
       "line": "La démo complète, c’est Chat360.",
       "verb": "Commente",
       "word": "DÉMO",
       "placeholder": "Ajouter un commentaire…",
-      "url": "chat360.ca"
+      "dmFrom": "Chat360",
+      "dmText": "Voici ta démo.",
+      "dmButton": "Réserver ma démo"
     }
   }
 }

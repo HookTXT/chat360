@@ -16,9 +16,10 @@ export const BrowserFrame: React.FC<{
   typedChars: number; // how many URL characters are visible
   caret?: boolean;
   onDark?: boolean;
+  urlSize?: number;
   children: React.ReactNode;
   style?: React.CSSProperties;
-}> = ({ width, height, url, typedChars, caret, onDark, children, style }) => (
+}> = ({ width, height, url, typedChars, caret, onDark, urlSize = 25, children, style }) => (
   <div
     style={{
       width,
@@ -53,7 +54,7 @@ export const BrowserFrame: React.FC<{
           padding: "0 22px",
           overflow: "hidden",
           whiteSpace: "nowrap",
-          fontSize: 25,
+          fontSize: urlSize,
           fontWeight: 600,
           color: "#374151",
         }}
